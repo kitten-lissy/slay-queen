@@ -56,7 +56,7 @@ public interface SlayQueenConfig extends Config
 	@ConfigItem(
 		keyName = "overlayDetail",
 		name = "Overlay detail",
-		description = "Compact shows prayer, sustain, cannon and missing items. Full also lists gear and notes. Everything is always in the side panel.",
+		description = "Compact shows cannon, AoE, requirements and missing items. Full also lists gear and notes. Everything is always in the side panel.",
 		position = 2
 	)
 	default OverlayDetail overlayDetail()

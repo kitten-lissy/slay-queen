@@ -55,8 +55,8 @@ import javax.swing.SwingUtilities;
 @Slf4j
 @PluginDescriptor(
 	name = "Slay Queen",
-	description = "Shows the best gear you own for your slayer task, required items, prayer, and cannon rules",
-	tags = {"slayer", "task", "gear", "loadout", "bis", "cannon", "prayer"}
+	description = "Shows what to bring for your slayer task based on the gear you own",
+	tags = {"slayer", "task", "gear", "loadout", "bis", "cannon"}
 )
 @PluginDependency(BankTagsPlugin.class)
 public class SlayQueenPlugin extends Plugin
@@ -545,8 +545,6 @@ public class SlayQueenPlugin extends Plugin
 			.task(task)
 			.loadout(l)
 			.theme(config.theme())
-			.prayerIcon(task == null ? null : icons.prayer(task.getPrayer()))
-			.sustainIcon(task == null ? null : icons.sustain(task.getSustain()))
 			.cannonIcon(itemManager.getImage(net.runelite.api.gameval.ItemID.MCANNONBALL))
 			.aoeIcon(task == null ? null : icons.aoe(task.getAoe() == null ? "BARRAGE" : task.getAoe()))
 			.styleIcon(icons.style(l == null ? null : l.getStyle()))

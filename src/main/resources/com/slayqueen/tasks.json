@@ -1,7 +1,6 @@
 [
  {
   "name": "Aberrant spectres",
-  "prayer": "MAGIC",
   "styles": [
    "MELEE",
    "RANGED"
@@ -29,11 +28,8 @@
   "cannon": "SOME",
   "cannonNote": "Stronghold Slayer Cave and Deepfin Mine only; not Slayer Tower or Catacombs (deviant spectres)",
   "notes": [
-   "Protect from Magic negates their normal attack",
    "Very frequent herb drops, up to three per kill"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Low max hit (8); Protect from Magic fully negates it",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -107,11 +103,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Abyssal demons",
-  "prayer": "MELEE",
   "styles": [
    "MAGIC",
    "MELEE",
@@ -138,8 +134,6 @@
    "Burst/barrage in the Catacombs of Kourend (multicombat)",
    "Abyssal Sire also counts for the task"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Accurate stab attack; Protect from Melee negates all damage",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -215,7 +209,7 @@
    "notes": [
     "Needs 85 Slayer and Priest in Peril",
     "Teleport anchoring scroll stops them teleporting you",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -241,12 +235,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "The Abyssal Sire",
-  "prayer": "VARIES",
-  "prayerNote": "Protect from Melee early; Protect from Missiles once minions spawn",
   "styles": [
    "MELEE",
    "RANGED"
@@ -264,8 +257,6 @@
    "Needs 85 Slayer and an abyssal demon or Sire task",
    "Reached via fairy ring DIP"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Heavy damage; prayer used throughout",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -299,12 +290,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (8)"
+  "poisonNote": "Poisons (8)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "The Alchemical Hydra",
-  "prayer": "VARIES",
-  "prayerNote": "Switch between Protect from Magic and Protect from Missiles",
   "styles": [
    "RANGED",
    "MELEE"
@@ -336,8 +326,6 @@
    "Requires a hydra task and 95 Slayer",
    "Prayer bonus gear is prioritised"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Switch between Protect from Magic and Protect from Missiles",
   "lootItems": [
    {
     "name": "Seed box",
@@ -385,11 +373,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poison pools (special attack)"
+  "poisonNote": "Poison pools (special attack)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Ankou",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -406,8 +394,6 @@
    "Burst or barrage in Catacombs or Wilderness Slayer Cave (multicombat)",
    "Only spectral monster that drops bones"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Inaccurate melee, max hit 8-10",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -453,7 +439,7 @@
    "notes": [
     "Cemetery is single-way; safespot behind south-west coffin",
     "Bring a one-click escape teleport, e.g. royal seed pod",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -479,11 +465,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Aquanites",
-  "prayer": "MAGIC",
   "styles": [
    "MELEE",
    "RANGED"
@@ -503,8 +489,6 @@
    "Slash first to sever the lure, then use stab",
    "Requires 73 Sailing to reach Ynysdail"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Accurate magic attack; Protect from Magic highly recommended",
   "lootItems": [
    {
     "name": "Seed box",
@@ -550,12 +534,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Araxxor",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Melee in melee range; Protect from Missiles if avoiding enrage melee",
   "styles": [
    "MELEE",
    "RANGED"
@@ -577,8 +560,6 @@
    "Counts for araxyte or spider tasks",
    "Bring a strong crush weapon and Elder maul or Dragon warhammer"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits hard with melee, ranged and magic",
   "lootItems": [],
   "slayerLevel": 92,
   "requirements": [
@@ -610,11 +591,11 @@
    }
   ],
   "poison": "VENOM",
-  "poisonNote": "Envenoms"
+  "poisonNote": "Envenoms",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Araxytes",
-  "prayer": "MELEE",
   "styles": [
    "RANGED",
    "MELEE",
@@ -635,8 +616,6 @@
    "Only kill level 146 araxytes (better drops, superior spawns)",
    "Spider cave teleport goes to the entrance"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Numerous, multicombat and venomous; wiki advises prayer",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -677,11 +656,11 @@
    }
   ],
   "poison": "VENOM",
-  "poisonNote": "Envenoms (starting at 6)"
+  "poisonNote": "Envenoms (starting at 6)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Aviansies",
-  "prayer": "MISSILES",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -696,8 +675,6 @@
    "Flying: only ranged or magic can hit them",
    "Kree'arra and his bodyguards count for the task"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Low max hits (8-16), all ranged",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -761,7 +738,7 @@
    "notes": [
     "Wiki strategy guide suggests blocking; very slow task",
     "Needs 60 Agility or 60 Strength; Armadylean guards also count",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -791,11 +768,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Bandits",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -812,8 +789,6 @@
    "Krystilia task; Bandit Camp in the Wilderness",
    "Level 130 bandits hit up to 12"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Level 130s hit up to 12; lower levels are harmless",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -844,7 +819,7 @@
    "aoeNote": "Barrage level 130 bandits alongside a cannon",
    "notes": [
     "Also a few bandits in the Slayer Cave (not recommended)",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -862,11 +837,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Banshees",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -890,8 +865,6 @@
   "notes": [
    "Twisted banshees in the Catacombs have better drops"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 2 with earmuffs",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -931,12 +904,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Barrows Brothers",
-  "prayer": "VARIES",
-  "prayerNote": "Magic vs Ahrim, Missiles vs Karil, Melee vs the others",
   "styles": [
    "MAGIC",
    "MELEE",
@@ -965,8 +937,6 @@
    "Each brother has a different weakness",
    "Drink potions above ground to save time"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Pray per brother; area drains prayer",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -1014,12 +984,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Basilisks",
-  "prayer": "VARIES",
-  "prayerNote": "None needed for regular basilisks; Protect from Magic for Basilisk Knights",
   "styles": [
    "MELEE",
    "RANGED"
@@ -1042,8 +1011,6 @@
    "Basilisk Knights drop the jaw for the Neitiznot faceguard",
    "Knight jaw rate improves to 1/1000 on task"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Regular basilisks barely hit; knights need prayer",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -1110,11 +1077,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Bats",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -1127,8 +1094,6 @@
   "notes": [
    "Dire bats in Vampyrium do not count"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Very weak monsters",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -1154,11 +1119,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Bears",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -1171,8 +1136,6 @@
   "notes": [
    "Callisto and Artio also count for the task"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low max hits",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -1192,7 +1155,7 @@
    "notes": [
     "Graveyard spot is single-way with a safespot",
     "Artio lair is singles-plus, level 21",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -1205,11 +1168,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Birds",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -1222,8 +1185,6 @@
    "Chickens, ducks and seagulls are the easiest birds",
    "Sailing birds do not count"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Birds rarely deal damage",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -1242,11 +1203,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Black demons",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -1264,8 +1225,6 @@
    "Taverley Dungeon and Chasm of Fire are the best spots",
    "Demonic gorillas count (except Konar/Krystilia)"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Max hit 16-17; Protect from Melee used for melee",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -1363,7 +1322,7 @@
     "Wiki strategy guide suggests blocking; slow task",
     "Edgeville Dungeon spot is single-way and safespottable",
     "Kolodion's final form also counts",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -1387,11 +1346,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Black dragons",
-  "prayer": "MELEE",
   "styles": [
    "RANGED",
    "MELEE"
@@ -1422,11 +1381,8 @@
   "cannon": "SOME",
   "cannonNote": "Not at brutal black dragons (Catacombs) or the King Black Dragon",
   "notes": [
-   "Baby, brutal and King Black Dragon count for the task",
-   "Brutals: Protect from Magic and range from distance"
+   "Baby, brutal and King Black Dragon count for the task"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Accurate, hard-hitting melee",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -1521,7 +1477,7 @@
     "Lava Maze Dungeon is single-way; bring antipoison for poison spiders",
     "King Black Dragon does not count",
     "Anti-dragon protection needed",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -1540,11 +1496,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Black Knights",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -1560,8 +1516,6 @@
   "notes": [
    "Krystilia task; kill them in the Wilderness (Lava Maze, near Bone Yard)"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 4",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -1588,7 +1542,7 @@
    "aoeNote": null,
    "notes": [
     "Knights north of Venenatis raised from 2 to 7 spawns",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -1606,11 +1560,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Bloodveld",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -1628,8 +1582,6 @@
    "Magical melee: magic defence armour helps",
    "Mutated bloodveld in Meiyerditch Labs are the best spot"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Low max hit; Protect from Melee negates it",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -1735,7 +1687,7 @@
     "Wiki strategy guide suggests blocking; very slow task",
     "Safespottable; 64 Agility Trollheim shortcut is closer",
     "Monsters aggressive unless you wear their god's item",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -1762,11 +1714,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Blue dragons",
-  "prayer": "MELEE",
   "styles": [
    "RANGED",
    "MELEE"
@@ -1800,8 +1752,6 @@
    "Cannon baby blue dragons in Taverley Dungeon for speed",
    "Vorkath counts for the task"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Low melee max hit; often safespotted or flicked",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -1923,11 +1873,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Brine rats",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -1954,8 +1904,6 @@
    "Rat bone weapons add +10 max hit against them",
    "Only assigned after Olaf's Quest"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Bring food if Defence is below ~70",
   "lootItems": [],
   "slayerLevel": 47,
   "requirements": [
@@ -2006,12 +1954,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Callisto",
-  "prayer": "MISSILES",
-  "prayerNote": "Switch to Protect from Magic for the knockback orb",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -2038,8 +1985,6 @@
    "Medium Wilderness Diary or a Callisto boss task gets you in",
    "Artio is the solo-scaled alternative"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Heavy hits; switch to Protect from Magic for the orb",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -2068,7 +2013,7 @@
     "Needs 'Like a boss' unlock for boss tasks",
     "Lairs above level 30 cannot be teleported out of",
     "Artio's lair is singles-plus",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -2092,11 +2037,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Catablepon",
-  "prayer": "NONE",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -2116,8 +2061,6 @@
    "Found in the Stronghold of Security level 3",
    "Kill level 64s for most Slayer XP"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 5-7; Protect from Magic optional against Weaken",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [],
@@ -2144,11 +2087,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Cave bugs",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -2179,8 +2122,6 @@
   "notes": [
    "Need a rope for the first entry to Lumbridge Swamp Caves"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Level 6 bugs are harmless",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -2213,11 +2154,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Cave crawlers",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -2237,8 +2178,6 @@
    "Fairy ring AJR for the Fremennik Slayer Dungeon",
    "Use an enclosed light source in Lumbridge Swamp Caves"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 3; poison is the main threat",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -2274,11 +2213,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (8)"
+  "poisonNote": "Poisons (8)",
+  "supplyType": "FOOD"
  },
  {
   "name": "Cave horrors",
-  "prayer": "MELEE",
   "styles": [
    "RANGED",
    "MELEE"
@@ -2303,7 +2242,7 @@
    {
     "name": "Witchwood icon",
     "alternatives": [],
-    "reason": "Or pray Protect from Melee instead"
+    "reason": null
    },
    {
     "name": "Bones to peaches",
@@ -2317,8 +2256,6 @@
    "Requires Cabin Fever",
    "Magical melee: magic defence helps when not praying"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Protect from Melee or tank with high magic defence",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -2381,11 +2318,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Cave kraken",
-  "prayer": "MAGIC",
   "styles": [
    "MAGIC"
   ],
@@ -2396,11 +2333,8 @@
   "cannon": "NO",
   "cannonNote": "Kraken Cove does not allow cannons",
   "notes": [
-   "Magic only; ranged does 1/7 damage, melee impossible",
-   "Kraken boss counts; Protect from Magic does not work on it"
+   "Magic only; ranged does 1/7 damage, melee impossible"
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit 13 magic, can be prayed against",
   "lootItems": [],
   "slayerLevel": 87,
   "requirements": [
@@ -2437,11 +2371,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Cave slimes",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -2476,8 +2410,6 @@
   "notes": [
    "Southern room is safe from gas explosions"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 2",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -2510,11 +2442,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (3)"
+  "poisonNote": "Poisons (3)",
+  "supplyType": "FOOD"
  },
  {
   "name": "Cerberus",
-  "prayer": "MAGIC",
   "styles": [
    "MELEE",
    "RANGED"
@@ -2544,8 +2476,6 @@
    "Requires 91 Slayer and a Cerberus or hellhound task",
    "Ward of Arceuus reduces ghost drain without a spectral"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Prayer switching and heavy prayer drain",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -2583,11 +2513,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Chaos druids",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -2604,8 +2534,6 @@
    "Krystilia task; kill them in the Edgeville Dungeon Wilderness section",
    "Watch for PKers dressed as chaos druids"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 2",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -2633,7 +2561,7 @@
    "notes": [
     "PKers disguise as druids in Zamorak robes; enable PK skull prevention",
     "Elder Chaos druids (Chaos Temple, multicombat) teleblock you",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -2653,11 +2581,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "The Chaos Elemental",
-  "prayer": "MAGIC",
   "styles": [
    "RANGED",
    "MELEE"
@@ -2675,8 +2603,6 @@
    "Deep Wilderness multicombat boss; risk only what you can lose",
    "A safespot is available per the wiki"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits into the 20s",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -2696,7 +2622,7 @@
    "notes": [
     "Multicombat deep Wilderness; expect PK teams",
     "Safespot method on wiki strategy page",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -2714,11 +2640,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "The Chaos Fanatic",
-  "prayer": "MAGIC",
   "styles": [
    "RANGED"
   ],
@@ -2739,8 +2665,6 @@
   "notes": [
    "Move away from his green special attack"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Magic max hit 21",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -2759,7 +2683,7 @@
    "aoeNote": null,
    "notes": [
     "Single-way: PKers cannot attack while you fight it",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -2771,11 +2695,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Cockatrice",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -2796,8 +2720,6 @@
   "notes": [
    "Moonlight cockatrice in Neypotzli also count"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Weak once a mirror shield is worn",
   "lootItems": [
    {
     "name": "Seed box",
@@ -2846,11 +2768,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Cows",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -2862,8 +2784,6 @@
   "notes": [
    "Beginner task; many fields across Gielinor"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 1",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -2882,11 +2802,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Crabs",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -2900,8 +2820,6 @@
    "Crabs go tolerant after 10 minutes; reset aggression",
    "Gemstone Crab and hermit crabs do not count"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low damage crush attacks",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -2929,11 +2847,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Crawling hands",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -2948,8 +2866,6 @@
   "notes": [
    "Salve amulet works on them"
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 1-2",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -2983,11 +2899,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Crazy Archaeologists",
-  "prayer": "MISSILES",
   "styles": [
    "MAGIC"
   ],
@@ -3009,8 +2925,6 @@
    "Avoid his area-of-effect special",
    "Wiki: weak to Magic due to negligible Magic level"
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Ranged max hit 14, special up to 24",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -3030,7 +2944,7 @@
    "notes": [
     "Single-way combat area",
     "Chaos talisman/tiara lets you hide in the Chaos altar if teleblocked",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -3048,11 +2962,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Crocodiles",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -3071,8 +2985,6 @@
    "Safespot by the water's edge; water-only crocs can't reach you.",
    "Grassy area south of Ruins of Ullek avoids desert heat."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 6; low damage.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -3108,11 +3020,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Custodian Stalkers",
-  "prayer": "MELEE",
   "styles": [
    "RANGED",
    "MELEE"
@@ -3123,7 +3035,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "sustain Protect from Melee"
+    "reason": null
    },
    {
     "name": "Dwarf multicannon",
@@ -3134,11 +3046,8 @@
   "cannonNote": "Only in the multicombat south-western part of the Stalker Den",
   "notes": [
    "Found in the Stalker Den; requires Shadows of Custodia.",
-   "Low-HP bleed special can be blocked with Protect from Magic.",
    "Juvenile need 54 Slayer, mature 67, elder 76."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee blocks most damage.",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -3192,12 +3101,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Dagannoth",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Melee at Catacombs/Prison; Lighthouse mixes ranged and melee",
   "styles": [
    "MELEE",
    "RANGED"
@@ -3208,7 +3116,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "for Protect from Melee"
+    "reason": null
    }
   ],
   "cannon": "SOME",
@@ -3218,8 +3126,6 @@
    "Lighthouse has mixed melee and ranged dagannoth.",
    "Waterbirth dungeon needs a pet rock and ranged weapon to enter."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Pray melee in Catacombs/Prison; eat is fine at the Lighthouse.",
   "lootItems": [
    {
     "name": "Seed box",
@@ -3310,11 +3216,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Dagannoth Kings",
-  "prayer": "VARIES",
   "styles": [
    "MAGIC",
    "RANGED",
@@ -3337,7 +3243,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "long trips with protection prayers"
+    "reason": null
    }
   ],
   "cannon": "SOME",
@@ -3346,8 +3252,6 @@
    "Each king uses a different style; each is weak to the style beating it.",
    "Elite Fremennik diary makes dagannoth bones drop noted."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protection prayers against each king.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -3402,11 +3306,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Dagannoth Supreme poisons; Rex and Prime don't"
+  "poisonNote": "Dagannoth Supreme poisons; Rex and Prime don't",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Dark beasts",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -3418,7 +3322,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "sustain Protect from Melee"
+    "reason": null
    }
   ],
   "cannon": "YES",
@@ -3427,8 +3331,6 @@
    "Mourner Tunnels (Slayer ring tele) or Iorwerth Dungeon in Prifddinas.",
    "Always aggressive; use prayer-bonus gear."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hit up to 17 in melee.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -3498,11 +3400,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Dark warriors",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -3518,8 +3420,6 @@
    "Krystilia task; Dark Warriors' Fortress, level 12-16 Wilderness.",
    "Kill level 8s in corridors while cannon hits courtyard."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low damage apart from the level 145s.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -3546,7 +3446,7 @@
    "aoeNote": null,
    "notes": [
     "Kill the level 8 variants for a fast task",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -3563,11 +3463,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Deranged Archaeologist",
-  "prayer": "MISSILES",
   "styles": [
    "MAGIC",
    "RANGED"
@@ -3594,8 +3494,6 @@
    "South end of the Tar Swamp on Fossil Island.",
    "Attack from range so he only uses ranged attacks."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Missiles vs his ranged attack.",
   "lootItems": [
    {
     "name": "Seed box",
@@ -3622,11 +3520,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Dogs",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -3639,8 +3537,6 @@
    "Jackals near DLQ are easiest; bring desert heat protection.",
    "Hellhounds and terror dogs do not count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hits 3-6.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -3664,11 +3560,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Drakes",
-  "prayer": "MISSILES",
   "styles": [
    "MELEE",
    "RANGED"
@@ -3703,8 +3599,6 @@
    "Step off the tile to dodge the volcanic breath.",
    "Dragonbane weapons are effective."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Missiles blocks their normal ranged attacks.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -3774,11 +3668,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Duke Sucellus",
-  "prayer": "MELEE",
   "styles": [
    "MELEE"
   ],
@@ -3800,8 +3694,6 @@
    "Asleep until fed two arder-musca poisons made in the asylum.",
    "Pestle and mortar and pickaxe are provided in the asylum."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee throughout.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -3828,11 +3720,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Dust devils",
-  "prayer": "MELEE",
   "styles": [
    "MAGIC",
    "RANGED",
@@ -3853,7 +3745,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "Protect from Melee while barraging"
+    "reason": null
    }
   ],
   "cannon": "SOME",
@@ -3862,8 +3754,6 @@
    "Catacombs of Kourend is the usual spot for barraging.",
    "Attacks count as melee but roll against ranged defence."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee when bursting/barraging stacks.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -3921,7 +3811,7 @@
    "notes": [
     "Needs 65 Slayer and Desert Treasure I",
     "Can only be killed while on task here",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -3940,11 +3830,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Dwarves",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -3957,8 +3847,6 @@
   "notes": [
    "Black Guards, chaos dwarves and dwarf gang members count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 2-3.",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -3990,11 +3878,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Earth warriors",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -4010,8 +3898,6 @@
    "Edgeville Dungeon Wilderness area, needs 15 Agility monkey bars.",
    "Watch for PKers disguised in bronze armour."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 5.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -4051,7 +3937,7 @@
    "notes": [
     "Reached via monkey bars (15 Agility)",
     "Safespottable",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -4072,12 +3958,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Elves",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Melee vs warriors; Missiles vs archers",
   "styles": [
    "MELEE",
    "RANGED"
@@ -4088,7 +3973,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "Protect from Melee vs Iorwerth warriors"
+    "reason": null
    }
   ],
   "cannon": "SOME",
@@ -4097,8 +3982,6 @@
    "Iorwerth Dungeon (Prifddinas) is best after Song of the Elves.",
    "Warriors' halberds reach 2 tiles; archers use ranged."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit about 10.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -4153,11 +4036,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Ents",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -4177,8 +4060,6 @@
   "notes": [
    "Krystilia task; Wilderness ents north/east of the Chaos Temple."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Wilderness ents max hit 10.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -4198,7 +4079,7 @@
    "notes": [
     "No looting bag or Larran's key drops from ents",
     "Chop the trunk for noted logs (double in Wilderness)",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -4210,11 +4091,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Fever spiders",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -4238,8 +4119,6 @@
    "Braindeath Island brewery basement; requires starting Rum Deal.",
    "Ranged/magic safespotters can skip the gloves."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 4 with slayer gloves.",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -4265,11 +4144,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "Inflicts disease (8), not poison"
+  "poisonNote": "Inflicts disease (8), not poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Fire giants",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -4286,8 +4165,6 @@
    "Catacombs of Kourend or Giants' Den are most popular.",
    "Krystilia: Deep Wilderness Dungeon only."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit 10-13; pray in multicombat Catacombs.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -4413,7 +4290,7 @@
    "notes": [
     "Safespot in south-east tunnel near Monk of Zamorak",
     "Dungeon is single-way; lvl 49-56, no teleport out above 30",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -4440,11 +4317,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Fleshcrawlers",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -4458,8 +4335,6 @@
    "Stronghold of Security level 2 (Catacomb of Famine).",
    "Safespot in the south-east room's south-west corner."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 1.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -4487,12 +4362,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Fossil island wyverns",
-  "prayer": "MELEE",
-  "prayerNote": "Melee in melee range; Protect from Missiles if ranging spitting wyverns",
   "styles": [
    "MELEE",
    "RANGED"
@@ -4520,8 +4394,6 @@
    "Spitting wyverns are easiest; avoid taloned wyverns.",
    "Ancient wyverns need 82 Slayer."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee vs long-tailed; Missiles from range vs spitting.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -4564,11 +4436,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Frost dragons",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -4602,8 +4474,6 @@
    "Grimstone Dungeon; needs 87 Sailing, then fairy ring DLP.",
    "Weakest to crush; can be safespotted."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Melee max hit 16; safespotting avoids damage.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -4626,11 +4496,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Gargoyles",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -4653,7 +4523,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "Protect from Melee negates all damage"
+    "reason": null
    }
   ],
   "cannon": "NO",
@@ -4662,8 +4532,6 @@
    "Weak to crush; basement is best on task.",
    "Buy Gargoyle Smasher to auto-finish them."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee negates all regular gargoyle damage.",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -4708,12 +4576,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "General Graardor",
-  "prayer": "VARIES",
-  "prayerNote": "Protect from Missiles when solo ranging; Protect from Melee when tanking Graardor",
   "styles": [
    "RANGED",
    "MELEE"
@@ -4744,8 +4611,6 @@
    "Requires 70 Strength to enter Bandos' Stronghold.",
    "Solo ranged is the most common approach."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protection prayers are mandatory.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -4796,11 +4661,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Ghosts",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -4817,8 +4682,6 @@
    "Spectres, banshees, ghasts and shades do not count.",
    "Revenants and tortured souls count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 2-7.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [],
@@ -4838,11 +4701,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Ghouls",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -4855,8 +4718,6 @@
    "West of Canifis; not undead, so salve amulet does not work.",
    "Ghouls retreat at low HP."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 5.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -4890,11 +4751,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "The Giant Mole",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -4924,8 +4785,6 @@
   "notes": [
    "Use stab weapons; lowest stab defence."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee throughout.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -4951,11 +4810,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Goblins",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -4967,8 +4826,6 @@
   "notes": [
    "Lumbridge goblins are closest; GWD sergeants also count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 1-2.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -4987,11 +4844,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Greater demons",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -5005,7 +4862,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "Protect from Melee in multicombat"
+    "reason": null
    }
   ],
   "cannon": "SOME",
@@ -5014,8 +4871,6 @@
    "Chasm of Fire (cannon) or Catacombs of Kourend are most common.",
    "Demonbane weapons are effective."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit 8-10.",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -5122,7 +4977,7 @@
    "notes": [
     "Lava Maze Dungeon is the single-way option (82 Agility advised)",
     "Demonic Ruins: multicombat, deep and busy, very unsafe",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -5146,11 +5001,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Green dragons",
-  "prayer": "NONE",
   "styles": [
    "RANGED",
    "MELEE"
@@ -5183,8 +5038,6 @@
    "Krystilia only; must be killed in the Wilderness.",
    "Three dragons west of Dark Warriors' Fortress are below level 20."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Melee max hit 8 with dragonfire protection.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -5212,7 +5065,7 @@
    "notes": [
     "Overworld spots are single-way; south of Venenatis is safespottable",
     "Anti-dragon protection needed",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -5229,11 +5082,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "The Grotesque Guardians",
-  "prayer": "VARIES",
   "styles": [
    "RANGED",
    "MELEE"
@@ -5268,8 +5121,6 @@
   "notes": [
    "Melee needs a noxious halberd; ranged/melee hybrid is easier."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Swap Protect from Melee and Missiles.",
   "lootItems": [],
   "slayerLevel": 75,
   "requirements": [
@@ -5298,11 +5149,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Gryphons",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -5322,8 +5173,6 @@
    "Wear 30 kg+ to avoid their knockback special.",
    "Weakest to stab; eastern cave is task-only."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -5362,11 +5211,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Harpie bug swarms",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -5385,8 +5234,6 @@
   "notes": [
    "Karamja, south-east of the fairy ring DKP."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Accurate, max hit 6; food or Protect from Melee.",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -5419,11 +5266,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Hellhounds",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -5436,7 +5283,7 @@
   "recommendedItems": [
    {
     "name": "Prayer potion",
-    "reason": "sustain Protect from Melee"
+    "reason": null
    }
   ],
   "cannon": "SOME",
@@ -5445,8 +5292,6 @@
    "Stronghold Slayer Cave or Catacombs of Kourend are common.",
    "Cerberus counts at 91 Slayer."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Accurate melee; pray or safespot.",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -5519,7 +5364,7 @@
    "notes": [
     "Vet'ion's skeleton hellhounds also count",
     "North-east of Deserted Keep (lvl 49-55): single-way but heavy PK traffic",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -5545,11 +5390,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Hill giants",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -5562,8 +5407,6 @@
   "notes": [
    "Cyclopes count; giant key drops unlock Obor."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 4.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -5591,7 +5434,7 @@
    "notes": [
     "Deep Wilderness Dungeon spot is safespottable",
     "Bone Yard Hunter area is multicombat (2 spawns)",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -5612,11 +5455,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Hobgoblins",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -5629,8 +5472,6 @@
   "notes": [
    "Hosidius vinery peninsula has 22 spawns."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 3-5.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -5665,12 +5506,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Hydras",
-  "prayer": "VARIES",
-  "prayerNote": "Protect from Magic or Missiles; swap when the hydra switches",
   "styles": [
    "RANGED",
    "MELEE",
@@ -5699,11 +5539,8 @@
   "cannon": "YES",
   "cannonNote": "Regular hydra area only; not the Alchemical Hydra room",
   "notes": [
-   "Alternate Protect from Magic/Missiles every 3 attacks.",
    "Konar or Mortimer only; Alchemical Hydra counts."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Swap protection prayers with the hydra's style.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -5770,11 +5607,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poison splats (special attack)"
+  "poisonNote": "Poison splats (special attack)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Icefiends",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -5790,8 +5627,6 @@
   "notes": [
    "Ice Mountain via Lassar Teleport is quickest."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 2-3.",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -5816,11 +5651,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Ice giants",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -5834,8 +5669,6 @@
    "Krystilia: Wilderness Slayer Cave has cannonable multicombat giants.",
    "Asgarnian Ice Dungeon west side is multicombat."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 7-10.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -5875,7 +5708,7 @@
    "notes": [
     "Popular PK spot; do not risk what you can't lose",
     "Frozen Waste Plateau (lvl 46-55) is single-way and safespottable",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -5899,11 +5732,11 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "cannonNote": "Not in the Settlement Ruins or Ruins of Tapoyauik"
+  "cannonNote": "Not in the Settlement Ruins or Ruins of Tapoyauik",
+  "supplyType": "FOOD"
  },
  {
   "name": "Ice warriors",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -5917,8 +5750,6 @@
   "notes": [
    "Asgarnian Ice Dungeon is the usual spot; Krystilia assigns Wilderness ones."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 6.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -5950,7 +5781,7 @@
    "notes": [
     "High PK traffic and no loot; wiki suggests block or complete",
     "Ice Plateau or Ghorrock teleports reach the area",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -5973,11 +5804,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Infernal mages",
-  "prayer": "MAGIC",
   "styles": [
    "MELEE",
    "RANGED"
@@ -5994,11 +5825,8 @@
   "cannon": "NO",
   "cannonNote": "Slayer Tower does not allow cannons.",
   "notes": [
-   "Found on the first floor of the Slayer Tower.",
-   "Accurate magic attacks; Protect from Magic negates them."
+   "Found on the first floor of the Slayer Tower."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit 8; prayer fully negates, food works for low-level players.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -6039,12 +5867,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "TzTok-Jad",
-  "prayer": "VARIES",
-  "prayerNote": "Switch between Protect from Missiles and Protect from Magic",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -6058,11 +5885,8 @@
   "cannon": "NO",
   "cannonNote": "Cannons cannot be set up in the TzHaar Fight Cave.",
   "notes": [
-   "Boss task: complete the TzHaar Fight Cave.",
-   "Requires switching between protection prayers."
+   "Boss task: complete the TzHaar Fight Cave."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits up to 97; prayer switching is mandatory.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [],
@@ -6082,11 +5906,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Jellies",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -6098,11 +5922,8 @@
   "cannon": "NO",
   "cannonNote": "Wiki sources conflict for the Wilderness Slayer Cave; assume no",
   "notes": [
-   "Magic-based melee: wear dragonhide or pray Protect from Melee.",
    "Warped jellies (Catacombs) are best for barrage; better drops."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Low max hit (5, warped 10); Protect from Melee negates all damage.",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -6168,7 +5989,7 @@
    "notes": [
     "Needs 52 Slayer; task-only spawns",
     "Can safespot by firing over corners",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -6194,11 +6015,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Jungle horrors",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -6218,8 +6039,6 @@
    "Found on Mos Le'Harmless (Cabin Fever required).",
    "A witchwood icon is not needed."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Wiki advises food (lobsters+) for players under 70 Defence.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -6258,12 +6077,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Kalphites",
-  "prayer": "MELEE",
-  "prayerNote": "Mostly for guardians or when cannoning in multicombat",
   "styles": [
    "MELEE"
   ],
@@ -6287,8 +6105,6 @@
    "Kill in the task-only Kalphite Cave; cannon soldiers or workers.",
    "Keris partisan is a strong weapon choice."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Low max hits; Protect from Melee helps when cannoning in multicombat.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -6341,12 +6157,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Workers don't poison; Soldiers (4) and Guardians (6) do"
+  "poisonNote": "Workers don't poison; Soldiers (4) and Guardians (6) do",
+  "supplyType": "BOTH"
  },
  {
   "name": "The Kalphite Queen",
-  "prayer": "MAGIC",
-  "prayerNote": "Protect from Magic most of the fight; Missiles also used",
   "styles": [
    "MELEE",
    "MAGIC",
@@ -6374,8 +6189,6 @@
    "Boss task: Kalphite Queen in the Kalphite Lair.",
    "Two forms with different defences; bring a switch."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits up to 31 with all three styles.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -6419,12 +6232,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "Queen doesn't poison; Guardians on the way do (6)"
+  "poisonNote": "Queen doesn't poison; Guardians on the way do (6)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Killerwatts",
-  "prayer": "MISSILES",
-  "prayerNote": "They use ranged when you fight from a distance",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -6444,8 +6256,6 @@
    "Enter via the portal at the top of Draynor Manor (Ernest the Chicken).",
    "Attack from range to lock them into ranged attacks."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Rapid, accurate attacks; wiki notes they hit hard for their level.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -6483,12 +6293,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "The King Black Dragon",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Magic if using a 2H or ranged weapon",
   "styles": [
    "MELEE",
    "RANGED"
@@ -6527,8 +6336,6 @@
   "notes": [
    "Boss task: King Black Dragon via the Wilderness lair."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Dragonfire and melee hit hard; Protect from Magic per wiki strategy.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -6552,12 +6359,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (8)"
+  "poisonNote": "Poisons (8)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "The Cave Kraken Boss",
-  "prayer": "NONE",
-  "prayerNote": "Its attacks have 100% prayer penetration",
   "styles": [
    "MAGIC"
   ],
@@ -6578,8 +6384,6 @@
    "Boss task: the Kraken in Kraken Cove.",
    "Immune to melee; Ranged deals 1/7 damage, so use Magic."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Kraken's attacks cannot be prayed against; bring food.",
   "lootItems": [],
   "slayerLevel": 87,
   "requirements": [
@@ -6601,11 +6405,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Kree'arra",
-  "prayer": "MISSILES",
   "styles": [
    "RANGED"
   ],
@@ -6642,8 +6446,6 @@
    "Boss task in the God Wars Dungeon; needs 70 Ranged to enter.",
    "Bring Armadyl items to avoid aggression in the dungeon."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Ranged hits up to 69; keep Protect from Missiles on.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -6708,12 +6510,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "K'ril Tsutsaroth",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Magic only for the melee-tank method",
   "styles": [
    "MELEE",
    "RANGED"
@@ -6736,8 +6537,6 @@
    "Boss task in the God Wars Dungeon; needs 70 Hitpoints to enter.",
    "Bring Zamorak items to avoid aggression in the dungeon."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits up to 49; melee users pray Protect from Magic.",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -6802,11 +6601,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (16)"
+  "poisonNote": "Poisons (16)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Kurask",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -6835,8 +6634,6 @@
    "High Defence players can skip prayer using Bones to Peaches.",
    "Frequent alchables, herbs and seeds."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Inaccurate max hit 11; prayer or Bones to Peaches both common.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -6905,12 +6702,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Lava Dragons",
-  "prayer": "NONE",
-  "prayerNote": "Commonly safespotted; Protect from Melee if tanking in melee range",
   "styles": [
    "MAGIC",
    "RANGED"
@@ -6940,8 +6736,6 @@
    "Lava Dragon Isle, level 36-42 Wilderness; PK hotspot.",
    "Safespot with water spells; bury lava dragon bones on the isle for 4x XP."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Usually safespotted with dragonfire protection, so prayer is not needed.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -6974,7 +6768,7 @@
     "Safespot behind skeleton piles or from outside the isle",
     "74 Agility stepping stone helps escape",
     "Accursed sceptre is best-in-slot per wiki guide",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -6992,11 +6786,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Lesser demons",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -7013,8 +6807,6 @@
    "Chasm of Fire or Catacombs are the most common spots.",
    "Demonbane weapons work well."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit 8-9; food is fine, prayer for AFK.",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -7046,7 +6838,7 @@
    "notes": [
     "King Black Dragon Lair cage (lvl 42) is multicombat",
     "Lava Maze spot needs slash weapon or knife for webs",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -7065,12 +6857,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Lesser Nagua",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Magic against Frost Nagua; Melee for Sulphur and Earthen",
   "styles": [
    "MELEE"
   ],
@@ -7084,8 +6875,6 @@
    "Sulphur Nagua in Neypotzli: free food and moonlight potions.",
    "-4 flat armour makes multi-hit weapons strong."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Moonlight potions in Neypotzli make praying free.",
   "lootItems": [],
   "slayerLevel": 48,
   "requirements": [
@@ -7150,12 +6939,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Lizardmen",
-  "prayer": "MISSILES",
-  "prayerNote": "Protect from Missiles is the common choice",
   "styles": [
    "RANGED",
    "MELEE"
@@ -7181,8 +6969,6 @@
    "Cannon regular lizardmen in Lizardman Canyon (multicombat).",
    "Shamans drop the dragon warhammer."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Mixed melee/ranged; shamans hit up to 31.",
   "lootItems": [
    {
     "name": "Seed box",
@@ -7267,11 +7053,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (3); shamans (10)"
+  "poisonNote": "Poisons (3); shamans (10)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Lizards",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -7304,8 +7090,6 @@
    "Sulphur lizards (44 Slayer) skip ice coolers; need boots of stone.",
    "Reptile freezer unlock auto-uses ice coolers."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low max hit (5); bring a little food.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -7358,12 +7142,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "The Maggot King",
-  "prayer": "VARIES",
-  "prayerNote": "Switch between Protect from Magic and Missiles",
   "styles": [
    "RANGED",
    "MELEE",
@@ -7386,8 +7169,6 @@
    "Boss task in Vampyrium; needs The Blood Moon Rises.",
    "Needs melee plus magic or ranged."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Magic/ranged hit up to 46 and are fully blocked by prayer.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -7415,11 +7196,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons"
+  "poisonNote": "Poisons",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Magic axes",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -7440,8 +7221,6 @@
    "Magic axe hut, level 54 Wilderness.",
    "Single-way combat."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 5; food only.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -7469,7 +7248,7 @@
    "notes": [
     "Bring a lockpick to enter the hut",
     "Needs 23 Thieving; hut is single-way",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -7490,11 +7269,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Mammoths",
-  "prayer": "NONE",
   "styles": [
    "RANGED",
    "MELEE"
@@ -7510,8 +7289,6 @@
    "South-east of the Ferox Enclave; easy to safespot behind trees.",
    "Nearby altar and bank at the Enclave."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 7; safespotting avoids damage.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -7543,7 +7320,7 @@
    "notes": [
     "Safespot behind trees or stumps (3x3 size)",
     "Short walk to Ferox Enclave to resupply",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -7555,12 +7332,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Metal dragons",
-  "prayer": "MELEE",
-  "prayerNote": "Mithril, adamant and rune dragons also use magic/ranged",
   "styles": [
    "MELEE",
    "RANGED"
@@ -7579,7 +7355,7 @@
      "Ancient wyvern shield",
      "Super antifire potion"
     ],
-    "reason": "metal dragonfire ignores Protect from Magic"
+    "reason": null
    }
   ],
   "recommendedItems": [
@@ -7594,8 +7370,6 @@
    "Fastest: cannon bronze dragons in the Brimhaven task-only area.",
    "Dragon hunter weapons are strong; weakest to stab."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Stay in melee range with Protect from Melee to reduce dragonfire.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -7713,11 +7487,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Minotaurs",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -7731,8 +7505,6 @@
    "Found on the first floor of the Stronghold of Security.",
    "Can be safespotted."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 3.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -7759,11 +7531,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Mogres",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -7783,8 +7555,6 @@
    "Found at Mudskipper Point; needs Skippy and the Mogres.",
    "Several safespots near the fairy ring."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 8; Protect from Melee optional (altar in Rimmington).",
   "lootItems": [
    {
     "name": "Seed box",
@@ -7816,11 +7586,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Molanisks",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -7853,8 +7623,6 @@
    "Dorgesh-Kaan South Dungeon; needs Death to the Dorgeshuun and a rope.",
    "Bring a light source."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Unusually low damage (max 5).",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -7889,11 +7657,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Monkeys",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -7907,8 +7675,6 @@
    "Regular monkeys on Karamja are the easiest option.",
    "Ba-Ba and baboons do not count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 1.",
   "lootItems": [],
   "aoe": "BURST",
   "aoeWhere": "Kruk's Dungeon lower floor, maniacal monkeys (multicombat)",
@@ -7941,11 +7707,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Moss giants",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -7961,8 +7727,6 @@
    "Most spots have safespots.",
    "On task the mossy key rate improves to 1/75."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 6.",
   "lootItems": [
    {
     "name": "Seed box",
@@ -8001,7 +7765,7 @@
    "aoeNote": null,
    "notes": [
     "Safespot behind the northernmost tree (one spawn)",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -8019,11 +7783,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Mutated zygomites",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -8051,8 +7815,6 @@
    "Found in Zanaris (Lost City) or Ancient Zygomites on Fossil Island.",
    "Wear dragonhide against their magic-based attacks."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Wiki recommends Protect from Melee if praying.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -8112,11 +7874,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Nechryael",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -8135,11 +7897,8 @@
   "cannon": "SOME",
   "cannonNote": "Wilderness Slayer Cave, Iorwerth and Charred Dungeon only; not Slayer Tower or Catacombs.",
   "notes": [
-   "Death spawns bypass Protect from Melee; bring some food.",
    "Greater nechryael in the Catacombs are best for barrage."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee plus some food for death spawns.",
   "lootItems": [
    {
     "name": "Seed box",
@@ -8212,7 +7971,7 @@
    "notes": [
     "Needs 80 Slayer; task-only spawns",
     "Popular with PKers; not safespottable",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -8238,11 +7997,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Ogres",
-  "prayer": "NONE",
   "styles": [
    "RANGED",
    "MELEE"
@@ -8257,8 +8016,6 @@
    "Best spot is west of Yanille; safespot behind the stone wall.",
    "Zogres and skogres count; brutal arrows work best on them."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 7-8; easy to safespot.",
   "lootItems": [
    {
     "name": "Seed box",
@@ -8286,11 +8043,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Otherworldly beings",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC",
@@ -8313,8 +8070,6 @@
    "Found south of the bank in Zanaris.",
    "Safespot by standing next to the flower pond."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 7.",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -8348,12 +8103,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "The Phantom Muspah",
-  "prayer": "VARIES",
-  "prayerNote": "Protect from Missiles by default; switch to Magic or Melee as needed",
   "styles": [
    "RANGED",
    "MELEE"
@@ -8369,8 +8123,6 @@
   "notes": [
    "Boss task after Secrets of the North; lair in Ghorrock Dungeon."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits up to 72; prayer switching is required.",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -8397,11 +8149,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Pirates",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -8419,11 +8171,8 @@
   ],
   "cannon": "YES",
   "notes": [
-   "Zombie pirates at the Chaos Temple also count (multicombat).",
-   "Elder Chaos druids near the temple teleblock; pray Magic there."
+   "Zombie pirates at the Chaos Temple also count (multicombat)."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 3-6.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -8456,7 +8205,7 @@
     "Elder Chaos druids here teleblock you",
     "Salve amulet (ei) works on zombie pirates",
     "Pirates' Hideout (~54) needs a lockpick, single-way",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -8476,11 +8225,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Pyrefiends",
-  "prayer": "MELEE",
   "styles": [
    "MAGIC",
    "RANGED",
@@ -8496,11 +8245,8 @@
   "cannon": "SOME",
   "cannonNote": "Not in the Fremennik Slayer Dungeon or God Wars Dungeons.",
   "notes": [
-   "Magic-based melee: wear dragonhide or flick Protect from Melee.",
    "Facemask or Slayer helmet needed if using the Smoke Dungeon."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Low max hit (4-5) but accurate; flick prayer or eat.",
   "lootItems": [
    {
     "name": "Ash sanctifier",
@@ -8526,11 +8272,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Rats",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -8543,8 +8289,6 @@
    "Rats and giant rats around Lumbridge are the easiest.",
    "Rat bone weapons are more effective against rats."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Rats rarely deal damage.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -8563,12 +8307,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Red dragons",
-  "prayer": "MELEE",
-  "prayerNote": "Flick Protect from Melee with a shield or antifire",
   "styles": [
    "MELEE",
    "RANGED"
@@ -8598,8 +8341,6 @@
    "Brimhaven Dungeon (noted hides with Elite Karamja Diary).",
    "Baby red dragons also count."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Wiki suggests flicking Protect from Melee with dragonfire protection.",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -8714,11 +8455,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Revenants",
-  "prayer": "MAGIC",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -8741,8 +8482,6 @@
    "Revenant Caves are a PK hotspot; only bring what you can lose.",
    "Salve amulet works; they are undead."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Magic plus Protect Item at almost all times.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -8764,7 +8503,7 @@
     "Bracelet of ethereum cuts revenant damage by 75%",
     "Amulet of avarice skulls you",
     "Wilderness weapon drop rate x5 on Krystilia task",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -8786,11 +8525,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Rockslugs",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -8812,8 +8551,6 @@
    "Slug salter unlock auto-uses bags of salt.",
    "Bring a light source for the Lumbridge Swamp Caves."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 4.",
   "lootItems": [
    {
     "name": "Seed box",
@@ -8849,11 +8586,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Rogues",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -8868,8 +8605,6 @@
    "Rogues' Castle in the Wilderness; watch for the Chaos Elemental.",
    "Unaggressive unless provoked."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Level 15 rogues barely hit.",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -8897,7 +8632,7 @@
    "notes": [
     "Kill the level 15 rogues for a fast task",
     "Chaos Elemental roams nearby; high PK risk",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -8910,12 +8645,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Sarachnis",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Melee; switch to Missiles when she shoots webs from range",
   "styles": [
    "MELEE"
   ],
@@ -8931,8 +8665,6 @@
    "Weak to crush; Sarachnis cudgel is a popular choice.",
    "Counts toward a spider task."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Melee and ranged hits up to 31",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -8965,12 +8697,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Scabarites",
-  "prayer": "MISSILES",
-  "prayerNote": "Protect from Missiles for locust riders, Magic for scarab mages",
   "styles": [
    "MELEE",
    "RANGED",
@@ -9006,8 +8737,6 @@
    "Small scarabs in Uzer Mastaba are the safest option.",
    "Watch for floor traps in Sophanem Dungeon."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Locust riders hit hard and accurately",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9062,12 +8791,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Scorpia",
-  "prayer": "MISSILES",
-  "prayerNote": "Protect from Missiles against offspring while freezing Scorpia",
   "styles": [
    "MAGIC",
    "MELEE"
@@ -9090,8 +8818,6 @@
    "Deep multicombat Wilderness; only bring what you can lose.",
    "Freeze her with Ice Barrage and attack from range."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Pray against her offspring's ranged attacks",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -9111,7 +8837,7 @@
    "notes": [
     "Multicombat PK hotspot; bring at most 3-4 valuable items",
     "Scorpia's offspring and guardians also count",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -9132,11 +8858,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (20)"
+  "poisonNote": "Poisons (20)",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Scorpions",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -9150,8 +8876,6 @@
    "Al Kharid Mine scorpions are a convenient spot.",
    "Lobsters (fightable) also count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low damage",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [],
@@ -9166,7 +8890,7 @@
    "notes": [
     "Scorpia, guardians and offspring count",
     "Scorpion Pit is multicombat PK hotspot; air obelisk spot is low risk",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -9185,11 +8909,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "Level 38 scorpion variant poisons (1)"
+  "poisonNote": "Level 38 scorpion variant poisons (1)",
+  "supplyType": "FOOD"
  },
  {
   "name": "Sea snakes",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -9209,8 +8933,6 @@
    "Found in the Miscellania and Etceteria Dungeon.",
    "Requires Royal Trouble."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 8 plus poison",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9256,11 +8978,11 @@
    }
   ],
   "poison": "POISON",
-  "poisonNote": "Poisons (7)"
+  "poisonNote": "Poisons (7)",
+  "supplyType": "FOOD"
  },
  {
   "name": "Shades",
-  "prayer": "NONE",
   "styles": [
    "MAGIC",
    "MELEE"
@@ -9282,8 +9004,6 @@
    "Loar shades in Mort'ton are fastest (Priest in Peril).",
    "Avoid Stronghold of Security shades (5 Slayer XP)."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low damage at Mort'ton",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -9310,11 +9030,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Shadow warriors",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "RANGED"
@@ -9330,8 +9050,6 @@
    "Can be safespotted through the fence by the pit scorpions.",
    "Hidden on the minimap."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 6",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9370,11 +9088,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "The Shellbane Gryphon",
-  "prayer": "MELEE",
   "styles": [
    "MELEE"
   ],
@@ -9391,11 +9109,7 @@
   "recommendedItems": [],
   "cannon": "NO",
   "cannonNote": "Shellbane Gryphon Cave is a no-cannon area; immune to cannon",
-  "notes": [
-   "Tortugan shield plus Protect from Melee negates its melee damage."
-  ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee with the Tortugan shield",
+  "notes": [],
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9434,12 +9148,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Skeletal wyverns",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Melee in melee range; Missiles if ranging",
   "styles": [
    "MELEE",
    "RANGED"
@@ -9468,8 +9181,6 @@
    "Dragonbane weapons (lance, dragon hunter crossbow) are best.",
    "Only assigned after Elemental Workshop I."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "High accuracy and icy breath",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9533,11 +9244,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Skeletons",
-  "prayer": "NONE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -9559,8 +9270,6 @@
    "Weak to crush and earth spells.",
    "Vet'ion and Calvar'ion count toward the task."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low damage",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9592,7 +9301,7 @@
    "notes": [
     "Safespot behind gate east of the Edgeville Dungeon mine",
     "Calvar'ion lair is singles-plus, level 21",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -9613,11 +9322,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Smoke devils",
-  "prayer": "MISSILES",
   "styles": [
    "MAGIC",
    "RANGED",
@@ -9642,8 +9351,6 @@
    "Task-only Smoke Devil Dungeon south of Castle Wars.",
    "Stack them around the cannon and barrage."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Missiles negates their magical ranged attacks",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9680,11 +9387,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Sourhogs",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -9706,8 +9413,6 @@
    "Only in the Sourhog Cave east of Draynor Manor.",
    "Requires A Porcine of Interest; assigned by Spria."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 6 with goggles",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9749,11 +9454,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Spiders",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -9767,8 +9472,6 @@
    "Lumbridge giant spiders are fine for low levels.",
    "Sarachnis, Venenatis and Araxytes (92 Slayer) also count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low damage",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [],
@@ -9783,7 +9486,7 @@
    "notes": [
     "Spider hill spiders are aggressive and low HP",
     "Spindel lair is singles-plus, level 29; Silk Chasm is multicombat",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -9801,12 +9504,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "Giant spiders don't; poison spiders (3/6) and araxytes (venom) do"
+  "poisonNote": "Giant spiders don't; poison spiders (3/6) and araxytes (venom) do",
+  "supplyType": "FOOD"
  },
  {
   "name": "Spiritual creatures",
-  "prayer": "VARIES",
-  "prayerNote": "Magic vs mages, Missiles vs rangers, Melee vs warriors",
   "styles": [
    "MELEE",
    "RANGED"
@@ -9822,8 +9524,6 @@
    "Mages (83 Slayer) are the only dragon boots source.",
    "Zarosian variants are much stronger."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Varies by creature and god",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -9904,7 +9604,7 @@
    "notes": [
     "Wiki strategy guide suggests blocking; very slow task",
     "Needs 63 Slayer and Death Plateau; safespottable",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -9934,12 +9634,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "Only Zarosian spiritual mages poison (4)"
+  "poisonNote": "Only Zarosian spiritual mages poison (4)",
+  "supplyType": "BOTH"
  },
  {
   "name": "Suqahs",
-  "prayer": "MAGIC",
-  "prayerNote": "Protect from Magic in the north; southern suqah are melee-only",
   "styles": [
    "RANGED",
    "MELEE"
@@ -9959,8 +9658,6 @@
   "notes": [
    "Requires partial Lunar Diplomacy."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Pray Magic in the north; melee-only suqah in the south",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -9996,11 +9693,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Terror dogs",
-  "prayer": "MELEE",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -10021,8 +9718,6 @@
    "Wait in Tarn's room for tolerance, then safespot.",
    "Requires Lair of Tarn Razorlor miniquest."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Room drains prayer; safespot after tolerance",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -10072,12 +9767,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "The Leviathan",
-  "prayer": "VARIES",
-  "prayerNote": "Switch protection prayers to match its orbs",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -10093,8 +9787,6 @@
   "notes": [
    "Requires Desert Treasure II progress."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protection prayers fully block its projectiles",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -10121,12 +9813,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "The Whisperer",
-  "prayer": "VARIES",
-  "prayerNote": "Switch protection prayers to match its attacks",
   "styles": [
    "MAGIC"
   ],
@@ -10146,8 +9837,6 @@
   "notes": [
    "Requires Desert Treasure II progress."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protection prayers fully block its projectiles",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -10187,12 +9876,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "The Thermonuclear Smoke Devil",
-  "prayer": "NONE",
-  "prayerNote": "Protection prayers have no effect on its attacks",
   "styles": [
    "MAGIC",
    "MELEE"
@@ -10215,11 +9903,8 @@
   "cannon": "NO",
   "cannonNote": "Cannons are destroyed in the boss room",
   "notes": [
-   "Its attacks ignore protection prayers.",
    "Found in the Smoke Devil Dungeon."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Fast low hits that ignore prayer",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -10243,11 +9928,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Trolls",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -10262,8 +9947,6 @@
    "Mountain trolls at Death Plateau or Mount Quidamortem.",
    "Ice trolls need a Neitiznot shield vs females' ranged."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee negates mountain troll damage",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -10354,11 +10037,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Turoth",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "RANGED",
@@ -10389,8 +10072,6 @@
    "Only found in the Fremennik Slayer Dungeon.",
    "Safespottable with ranged or Magic Dart."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit 10; food or prayer",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -10437,11 +10118,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Tzhaar",
-  "prayer": "MELEE",
   "styles": [
    "MELEE",
    "MAGIC"
@@ -10457,8 +10138,6 @@
    "Ket and melee Xil are easily safespotted by vents.",
    "TzTok-Jad or TzKal-Zuk can be done instead."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Safespot or Protect from Melee while bursting Ket",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -10467,7 +10146,7 @@
   ],
   "aoe": "BARRAGE",
   "aoeWhere": "Inner Mor Ul Rek near TzHaar-Ket-Rak's Challenges (multicombat)",
-  "aoeNote": "Fire cape needed; burst/barrage TzHaar-Ket, Protect from Melee",
+  "aoeNote": "Fire cape needed; burst/barrage TzHaar-Ket",
   "aoeLevel": "OPTIONAL",
   "slayerLevel": 0,
   "requirements": [],
@@ -10487,11 +10166,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Vampyres",
-  "prayer": "MELEE",
   "styles": [
    "MELEE"
   ],
@@ -10525,8 +10204,6 @@
    "Feral vampyres can be hit by any weapon.",
    "Tier 2 juvinates need silver weapons."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Sentinels only melee, so prayer allows AFK kills",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -10622,11 +10299,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Vardorvis",
-  "prayer": "MELEE",
   "styles": [
    "MELEE"
   ],
@@ -10641,8 +10318,6 @@
   "notes": [
    "Requires Desert Treasure II progress."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee reduces his hits by ~75%",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -10675,12 +10350,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Venators",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Melee up close, Missiles at range",
   "styles": [
    "MELEE"
   ],
@@ -10717,8 +10391,6 @@
    "Found in Vampyrium; requires The Blood Moon Rises.",
    "Melee up close, ranged at distance."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Prayer blocks ranged and most melee damage",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -10748,12 +10420,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Venenatis",
-  "prayer": "VARIES",
-  "prayerNote": "Melee in melee range; otherwise Missiles then Magic",
   "styles": [
    "MELEE",
    "RANGED"
@@ -10772,8 +10443,6 @@
    "Wilderness; only bring what you can lose.",
    "Kill spiderlings quickly."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protection prayers fully block her attacks",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -10801,7 +10470,7 @@
    "notes": [
     "Spindel's Web Chasm is singles-plus in the eastern ruins",
     "Spiderlings do not count toward the task",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -10824,12 +10493,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Vet'ion",
-  "prayer": "MELEE",
-  "prayerNote": "Protect from Melee for hellhounds; his lightning is dodged",
   "styles": [
    "MELEE"
   ],
@@ -10848,8 +10516,6 @@
    "Wilderness multicombat; only bring what you can lose.",
    "Weak to crush."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Protect from Melee against his hellhounds",
   "lootItems": [
    {
     "name": "Looting bag",
@@ -10877,7 +10543,7 @@
    "notes": [
     "Vet'ion lair is multicombat around lvl 35; no teleport out",
     "Also counts for skeleton and hellhound tasks",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -10899,12 +10565,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Vorkath",
-  "prayer": "MAGIC",
-  "prayerNote": "Protect from Missiles if using a dragonfire shield or ward",
   "styles": [
    "RANGED",
    "MELEE"
@@ -10940,8 +10605,6 @@
    "Requires Dragon Slayer II progress.",
    "Counts for blue dragon and zombie tasks."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits hard with magic, ranged and dragonfire",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -10973,11 +10636,11 @@
    }
   ],
   "poison": "VENOM",
-  "poisonNote": "Envenoms"
+  "poisonNote": "Envenoms",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Wall beasts",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -11015,8 +10678,6 @@
    "Only in the Lumbridge Swamp Caves.",
    "Spiny helmet only needed to start the fight."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Max hit 4 with a spiny helmet",
   "lootItems": [],
   "slayerLevel": 35,
   "requirements": [
@@ -11038,12 +10699,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "Warped Creatures",
-  "prayer": "VARIES",
-  "prayerNote": "Protect from Melee for tortoises, Missiles for terrorbirds",
   "styles": [
    "MELEE",
    "RANGED"
@@ -11068,8 +10728,6 @@
    "Requires The Path of Glouphrie.",
    "Tortoises are non-aggressive; terrorbirds never lose aggression."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Prayer negates tortoise melee and terrorbird ranged",
   "lootItems": [
    {
     "name": "Gem bag",
@@ -11113,11 +10771,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Waterfiends",
-  "prayer": "MISSILES",
   "styles": [
    "MAGIC",
    "MELEE",
@@ -11136,8 +10794,6 @@
    "100% weak to earth spells; low crush defence.",
    "Safespot across the river in the Ancient Cavern."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Magic and magical ranged; Missiles helps most",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -11219,11 +10875,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Werewolves",
-  "prayer": "MELEE",
   "styles": [
    "MELEE"
   ],
@@ -11237,8 +10893,6 @@
    "Don't use Wolfbane: human-form kills don't count for the task",
    "Only transformed werewolves count for the task."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Max hit 8-9",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -11279,11 +10933,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Wolves",
-  "prayer": "MELEE",
   "styles": [
    "MELEE"
   ],
@@ -11293,11 +10947,7 @@
   "recommendedItems": [],
   "cannon": "YES",
   "cannonNote": "Stronghold of Security first level is a good cannon spot",
-  "notes": [
-   "Wiki suggests safespotting or Protect from Melee."
-  ],
-  "sustain": "EITHER",
-  "sustainNote": "Accurate but low damage",
+  "notes": [],
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -11320,12 +10970,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Wyrms",
-  "prayer": "MAGIC",
-  "prayerNote": "Protect from Magic at range; Missiles for lava strykewyrms",
   "styles": [
    "RANGED",
    "MELEE"
@@ -11348,11 +10997,8 @@
   "cannon": "SOME",
   "cannonNote": "Wyrmscraig and Neypotzli; not Karuulm Slayer Dungeon; strykewyrms immune",
   "notes": [
-   "Stay out of melee range and pray Magic.",
    "Wyrmlings at Wyrmscraig are fastest (62 Sailing)."
   ],
-  "sustain": "EITHER",
-  "sustainNote": "Protect from Magic at range avoids all damage",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -11459,11 +11105,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "BOTH"
  },
  {
   "name": "Commander Zilyana",
-  "prayer": "MAGIC",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -11480,8 +11126,6 @@
    "Requires 70 Agility and killcount to enter.",
    "Bring god items for tolerance in the dungeon."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Always pray Protect from Magic",
   "lootItems": [
    {
     "name": "Bonecrusher",
@@ -11546,11 +11190,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Zombies",
-  "prayer": "NONE",
   "styles": [
    "MELEE"
   ],
@@ -11566,8 +11210,6 @@
    "Undead chickens and cows at Alice's farm are quickest.",
    "Vorkath and Undead Druids also count."
   ],
-  "sustain": "EAT",
-  "sustainNote": "Low damage",
   "lootItems": [
    {
     "name": "Herb sack",
@@ -11595,7 +11237,7 @@
    "notes": [
     "Graveyard of Shadows is single-way, safespottable, near Ferox",
     "Elder Chaos druids at the temple teleblock you",
-    "Keep 3 items on death, 4 with Protect Item; skulled keeps 0 (1 with Protect Item)",
+    "Keep 3 items on death; if skulled you keep none",
     "Most teleports fail above level 20 Wilderness"
    ]
   },
@@ -11615,11 +11257,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "FOOD"
  },
  {
   "name": "TzKal-Zuk",
-  "prayer": "VARIES",
   "styles": [
    "RANGED"
   ],
@@ -11643,8 +11285,6 @@
   "notes": [
    "Offered only after one Zuk kill."
   ],
-  "sustain": "PRAY",
-  "sustainNote": "Requires constant prayer switching",
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [],
@@ -11664,12 +11304,11 @@
    }
   ],
   "poison": "NONE",
-  "poisonNote": "No poison"
+  "poisonNote": "No poison",
+  "supplyType": "PRAYER_POTIONS"
  },
  {
   "name": "Zulrah",
-  "prayer": "VARIES",
-  "prayerNote": "Mostly Protect from Magic; Missiles on ranged phases",
   "styles": [
    "RANGED",
    "MAGIC"
@@ -11687,11 +11326,7 @@
   ],
   "cannon": "NO",
   "cannonNote": "Zulrah's Shrine is a no-cannon area",
-  "notes": [
-   "Mostly Protect from Magic per wiki."
-  ],
-  "sustain": "PRAY",
-  "sustainNote": "Hits up to 41",
+  "notes": [],
   "lootItems": [],
   "slayerLevel": 0,
   "requirements": [
@@ -11726,6 +11361,7 @@
    }
   ],
   "poison": "VENOM",
-  "poisonNote": "Envenoms"
+  "poisonNote": "Envenoms",
+  "supplyType": "PRAYER_POTIONS"
  }
 ]

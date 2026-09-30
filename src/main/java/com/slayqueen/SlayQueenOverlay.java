@@ -72,10 +72,6 @@ public class SlayQueenOverlay extends OverlayPanel
 			iconLine(null, "Needs " + r.label(), "", theme.getMissing());
 		}
 
-		iconLine(icons.prayer(task.getPrayer()), "Pray", prayerText(task.getPrayer()), theme.getOwned());
-		note(task.getPrayerNote());
-		iconLine(icons.sustain(task.getSustain()), "Sustain", sustainText(task.getSustain()), theme.getOwned());
-		note(task.getSustainNote());
 		if ("POISON".equals(task.getPoison()) || "VENOM".equals(task.getPoison()))
 		{
 			iconLine(null, "Poison", pretty(task.getPoison()), theme.getMissing());
@@ -210,44 +206,6 @@ public class SlayQueenOverlay extends OverlayPanel
 		if (!compact && text != null && !text.isEmpty())
 		{
 			panelComponent.getChildren().add(LineComponent.builder().left("  " + text).leftColor(theme.getDim()).build());
-		}
-	}
-
-	static String prayerText(String prayer)
-	{
-		if (prayer == null)
-		{
-			return "?";
-		}
-		switch (prayer)
-		{
-			case "MELEE":
-				return "Protect from Melee";
-			case "MISSILES":
-				return "Protect from Missiles";
-			case "MAGIC":
-				return "Protect from Magic";
-			case "NONE":
-				return "Not needed";
-			default:
-				return "Varies";
-		}
-	}
-
-	static String sustainText(String sustain)
-	{
-		if (sustain == null)
-		{
-			return "?";
-		}
-		switch (sustain)
-		{
-			case "PRAY":
-				return "Pray (prayer pots)";
-			case "EAT":
-				return "Eat (food)";
-			default:
-				return "Pray or eat";
 		}
 	}
 

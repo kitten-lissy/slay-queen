@@ -7,7 +7,7 @@ Shows what to bring for your current slayer task, using the gear you actually ow
 - **Best gear you own** for each slot, picked from your bank, inventory and equipment using real item stats and the monster's weakness
 - **Task-specific gear** first where it matters: salve amulet for undead, dragonhunter gear, leaf-bladed weapons, demonbane, keris, and more
 - **Required items** (rock hammer, bag of salt, earmuffs, nose peg, mirror shield, ice coolers...) marked as owned or missing
-- **Protection prayer** and whether to **pray or eat**
+- **Supplies** to bring (prayer potions or food, antifire, cannonballs, runes)
 - **Cannon** rules for the task (yes / no / some areas)
 - **Burst/barrage tasks**: stack location and an Ancient Magicks loadout (or chinchompas)
 - **Loot helpers** worth bringing: herb sack, seed box, gem bag, looting bag, bonecrusher, ash sanctifier

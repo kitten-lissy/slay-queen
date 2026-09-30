@@ -41,8 +41,6 @@ public class SlayQueenPanel extends PluginPanel
 		TaskInfo task;
 		LoadoutCalculator.Loadout loadout;
 		Theme theme;
-		BufferedImage prayerIcon;
-		BufferedImage sustainIcon;
 		BufferedImage cannonIcon;
 		BufferedImage aoeIcon;
 		BufferedImage styleIcon;
@@ -108,8 +106,6 @@ public class SlayQueenPanel extends PluginPanel
 			}
 		}
 		spacer();
-		row(v.getPrayerIcon(), "Pray", SlayQueenOverlay.prayerText(task.getPrayer()), task.getPrayerNote(), theme.getOwned());
-		row(v.getSustainIcon(), "Sustain", SlayQueenOverlay.sustainText(task.getSustain()), task.getSustainNote(), theme.getOwned());
 		if ("POISON".equals(task.getPoison()) || "VENOM".equals(task.getPoison()))
 		{
 			row(null, "Poison", SlayQueenOverlay.pretty(task.getPoison()), task.getPoisonNote(), theme.getMissing());

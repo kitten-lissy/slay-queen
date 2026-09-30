@@ -46,7 +46,7 @@ public class TaskResolverTest
 		t.setName("Wyrms");
 		t.setStyles(Collections.singletonList("MELEE"));
 		t.setTags(new ArrayList<>());
-		t.setSustain("PRAY");
+		t.setSupplyType("PRAYER_POTIONS");
 		t.setCannon("SOME");
 		t.setRequiredItems(new ArrayList<>(Collections.singletonList(need("Boots of stone"))));
 		t.setSlayerLevel(62);

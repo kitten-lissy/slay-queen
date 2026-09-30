@@ -110,36 +110,6 @@ public class Icons
 		return id == NO_ITEM ? null : item(id);
 	}
 
-	BufferedImage prayer(String prayer)
-	{
-		if ("MELEE".equals(prayer))
-		{
-			return sprite(SpriteID.Prayeron.PROTECT_FROM_MELEE);
-		}
-		if ("MISSILES".equals(prayer))
-		{
-			return sprite(SpriteID.Prayeron.PROTECT_FROM_MISSILES);
-		}
-		if ("MAGIC".equals(prayer))
-		{
-			return sprite(SpriteID.Prayeron.PROTECT_FROM_MAGIC);
-		}
-		return sprite(SpriteID.Staticons.PRAYER);
-	}
-
-	BufferedImage sustain(String sustain)
-	{
-		if ("PRAY".equals(sustain))
-		{
-			return sprite(SpriteID.Staticons.PRAYER);
-		}
-		if ("EAT".equals(sustain))
-		{
-			return item(ItemID.SHARK);
-		}
-		return sprite(SpriteID.Staticons.HITPOINTS);
-	}
-
 	BufferedImage cannon()
 	{
 		return item(ItemID.MCANNONBALL);

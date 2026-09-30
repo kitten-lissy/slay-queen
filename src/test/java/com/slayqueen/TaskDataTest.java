@@ -53,14 +53,12 @@ public class TaskDataTest
 	@Test
 	public void fieldsUseKnownValues() throws Exception
 	{
-		Set<String> prayers = new HashSet<>(Arrays.asList("MELEE", "MISSILES", "MAGIC", "NONE", "VARIES"));
-		Set<String> sustain = new HashSet<>(Arrays.asList("PRAY", "EAT", "EITHER"));
+		Set<String> supplyTypes = new HashSet<>(Arrays.asList("PRAYER_POTIONS", "FOOD", "BOTH"));
 		Set<String> cannon = new HashSet<>(Arrays.asList("YES", "NO", "SOME"));
 		Set<String> styles = new HashSet<>(Arrays.asList("MELEE", "RANGED", "MAGIC"));
 		for (TaskInfo t : load("tasks.json", TaskInfo[].class))
 		{
-			assertTrue(t.getName(), prayers.contains(t.getPrayer()));
-			assertTrue(t.getName(), sustain.contains(t.getSustain()));
+			assertTrue(t.getName(), supplyTypes.contains(t.getSupplyType()));
 			assertTrue(t.getName(), cannon.contains(t.getCannon()));
 			assertFalse(t.getName(), t.getStyles().isEmpty());
 			assertTrue(t.getName(), styles.containsAll(t.getStyles()));

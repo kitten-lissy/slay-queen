@@ -242,16 +242,16 @@ public class TaskResolver
 	}
 
 	/**
-	 * General supplies for the task: what to sustain with, antifire for dragons, cannon, and runes for AoE.
+	 * General supplies for the task: prayer potions or food, antifire for dragons, cannon, and runes for AoE.
 	 */
 	static List<TaskInfo.ItemNeed> supplies(TaskInfo t)
 	{
 		List<TaskInfo.ItemNeed> out = new ArrayList<>();
-		if ("PRAY".equals(t.getSustain()) || "EITHER".equals(t.getSustain()))
+		if ("PRAYER_POTIONS".equals(t.getSupplyType()) || "BOTH".equals(t.getSupplyType()))
 		{
 			out.add(need("Prayer potion", "to keep praying", PRAYER));
 		}
-		if (!"PRAY".equals(t.getSustain()) || "EITHER".equals(t.getSustain()))
+		if (!"PRAYER_POTIONS".equals(t.getSupplyType()))
 		{
 			out.add(need("Shark", "food", FOOD));
 		}
@@ -322,10 +322,7 @@ public class TaskResolver
 	{
 		TaskInfo t = new TaskInfo();
 		t.setName(b.getName());
-		t.setPrayer(b.getPrayer());
-		t.setPrayerNote(b.getPrayerNote());
-		t.setSustain(b.getSustain());
-		t.setSustainNote(b.getSustainNote());
+		t.setSupplyType(b.getSupplyType());
 		t.setStyles(b.getStyles());
 		t.setWeakness(b.getWeakness());
 		t.setTags(new ArrayList<>(TaskInfo.orEmpty(b.getTags())));

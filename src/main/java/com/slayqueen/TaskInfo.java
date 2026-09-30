@@ -11,10 +11,8 @@ import lombok.Data;
 public class TaskInfo
 {
 	private String name;
-	private String prayer;
-	private String prayerNote;
-	private String sustain;
-	private String sustainNote;
+	/** PRAYER_POTIONS, FOOD or BOTH: which of these to bring under supplies. */
+	private String supplyType;
 	private List<String> styles;
 	private String weakness;
 	private List<String> tags;
