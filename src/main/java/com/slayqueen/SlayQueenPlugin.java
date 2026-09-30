@@ -66,6 +66,8 @@ public class SlayQueenPlugin extends Plugin
 	private static final int BOSS_TASK_ID = 98;
 	static final String BANK_TAG = "slayqueen";
 	private static final String LAST_TASK_KEY = "lastTask";
+	/** Set when a new task is assigned, cleared the first time the bank is closed afterwards. */
+	private static final String NEEDS_PREP_KEY = "needsPrep";
 
 	@Inject
 	private Client client;
@@ -143,6 +145,7 @@ public class SlayQueenPlugin extends Plugin
 
 	@Getter
 	private volatile boolean bankOpen;
+	private volatile boolean needsPrep;
 	private volatile Instant showUntil = Instant.EPOCH;
 
 	@Provides
@@ -338,6 +341,12 @@ public class SlayQueenPlugin extends Plugin
 		if (event.getGroupId() == InterfaceID.BANKMAIN)
 		{
 			bankOpen = false;
+			if (needsPrep)
+			{
+				// Geared up for the task; the "new task only" overlay has done its job
+				needsPrep = false;
+				configManager.unsetRSProfileConfiguration(SlayQueenConfig.GROUP, NEEDS_PREP_KEY);
+			}
 		}
 	}
 
@@ -345,7 +354,8 @@ public class SlayQueenPlugin extends Plugin
 	public void onConfigChanged(ConfigChanged event)
 	{
 		if (SlayQueenConfig.GROUP.equals(event.getGroup())
-			&& !BANK_KEY.equals(event.getKey()) && !LAST_TASK_KEY.equals(event.getKey()))
+			&& !BANK_KEY.equals(event.getKey()) && !LAST_TASK_KEY.equals(event.getKey())
+			&& !NEEDS_PREP_KEY.equals(event.getKey()))
 		{
 			clientThread.invokeLater(this::recalculate);
 		}
@@ -363,6 +373,10 @@ public class SlayQueenPlugin extends Plugin
 				return true;
 			case BANK_ONLY:
 				return bankOpen;
+			case NEW_TASK_ONLY:
+				return Instant.now().isBefore(showUntil);
+			case NEW_TASK_UNTIL_BANK_CLOSE:
+				return needsPrep;
 			default:
 				return bankOpen || Instant.now().isBefore(showUntil);
 		}
@@ -389,6 +403,7 @@ public class SlayQueenPlugin extends Plugin
 			{
 				changed = true;
 				configManager.setRSProfileConfiguration(SlayQueenConfig.GROUP, LAST_TASK_KEY, taskKey);
+				configManager.setRSProfileConfiguration(SlayQueenConfig.GROUP, NEEDS_PREP_KEY, true);
 			}
 		}
 		remaining = amount;
@@ -397,6 +412,7 @@ public class SlayQueenPlugin extends Plugin
 		currentTask = name == null ? null : tasksByKey.get(key(name));
 		if (changed)
 		{
+			needsPrep = true;
 			showUntil = Instant.now().plusSeconds(NEW_TASK_SECONDS);
 		}
 		recalculate();
@@ -700,6 +716,7 @@ public class SlayQueenPlugin extends Plugin
 
 	private void loadBankFromProfile()
 	{
+		needsPrep = "true".equals(configManager.getRSProfileConfiguration(SlayQueenConfig.GROUP, NEEDS_PREP_KEY));
 		String saved = configManager.getRSProfileConfiguration(SlayQueenConfig.GROUP, BANK_KEY);
 		if (saved == null || saved.isEmpty())
 		{

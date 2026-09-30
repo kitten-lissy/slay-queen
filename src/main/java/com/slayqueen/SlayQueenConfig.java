@@ -12,9 +12,24 @@ public interface SlayQueenConfig extends Config
 
 	enum OverlayMode
 	{
-		ALWAYS,
-		BANK_AND_NEW_TASK,
-		BANK_ONLY
+		ALWAYS("Always"),
+		BANK_AND_NEW_TASK("Bank & new task"),
+		BANK_ONLY("Bank only"),
+		NEW_TASK_ONLY("New task only"),
+		NEW_TASK_UNTIL_BANK_CLOSE("New task to bank close");
+
+		private final String label;
+
+		OverlayMode(String label)
+		{
+			this.label = label;
+		}
+
+		@Override
+		public String toString()
+		{
+			return label;
+		}
 	}
 
 	enum OverlayDetail
@@ -45,7 +60,7 @@ public interface SlayQueenConfig extends Config
 	@ConfigItem(
 		keyName = "overlayMode",
 		name = "Show overlay",
-		description = "When to show the task overlay. 'Bank and new task' shows it only while the bank is open and for a short time after getting a task.",
+		description = "<html>When to show the task overlay (the side panel always has everything):<br><b>Always</b>: whenever you have a task<br><b>Bank &amp; new task</b>: while your bank is open, plus 90 seconds after getting a task<br><b>Bank only</b>: only while your bank is open<br><b>New task only</b>: for 90 seconds after getting a task<br><b>New task to bank close</b>: from getting a task until you first close your bank</html>",
 		position = 1
 	)
 	default OverlayMode overlayMode()
