@@ -262,6 +262,7 @@ public class TaskResolver
 		}
 		if ("YES".equals(t.getCannon()) || "SOME".equals(t.getCannon()))
 		{
+			out.add(need("Cannon base", "dwarf multicannon (base, stand, barrels, furnace)", null));
 			out.add(need("Cannonball", "if you cannon", Arrays.asList("Granite cannonball")));
 		}
 		if (t.aoeStandard() && !"CHINCHOMPA".equals(t.getAoe()))

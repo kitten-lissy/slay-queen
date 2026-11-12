@@ -119,7 +119,28 @@ public class TaskResolverTest
 		assertEquals("Anti-venom+", r.getTask().getRecommendedItems().get(0).getName());
 		assertEquals("Prayer potion", r.getTask().getSupplies().get(0).getName());
 		assertTrue(r.getTask().getSupplies().stream().anyMatch(n -> n.getName().equals("Cannonball")));
+		assertTrue(r.getTask().getSupplies().stream().anyMatch(n -> n.getName().equals("Cannon base")));
 		assertFalse(r.getTask().getSupplies().stream().anyMatch(n -> n.getName().equals("Shark")));
+	}
+
+	@Test
+	public void cannonPartsAndBallsAreCannonItems()
+	{
+		for (String name : new String[]{"Cannon base", "Cannon stand", "Cannon barrels", "Cannon furnace",
+			"Cannon base (or)", "Cannonball", "Granite cannonball"})
+		{
+			assertTrue(name, SlayQueenPlugin.isCannonItem(name));
+		}
+		assertFalse(SlayQueenPlugin.isCannonItem("Ammo mould"));
+	}
+
+	@Test
+	public void noCannonSuppliesWhenCannonNotAllowed()
+	{
+		TaskInfo t = wyrms();
+		t.setCannon("NO");
+		TaskResolver.Resolved r = new TaskResolver().resolve(t, null, false, account(99, x -> true));
+		assertFalse(r.getTask().getSupplies().stream().anyMatch(n -> n.getName().startsWith("Cannon")));
 	}
 
 	@Test

@@ -534,6 +534,17 @@ public class SlayQueenPlugin extends Plugin
 				if (s.getOwned() != null)
 				{
 					addIds(ids, allIds, s.getOwned());
+					if (isCannonItem(s.getOwned().getName()))
+					{
+						// One line in the panel, but every cannon part and both kinds of cannonball light up
+						allIds.forEach((name, same) ->
+						{
+							if (isCannonItem(name))
+							{
+								ids.addAll(same);
+							}
+						});
+					}
 				}
 			}
 		}
@@ -712,6 +723,14 @@ public class SlayQueenPlugin extends Plugin
 			.prayer(e.getPrayer())
 			.aspeed(e.getAspeed())
 			.build();
+	}
+
+	/** Dwarf multicannon parts (including ornament kits) and cannonballs. */
+	static boolean isCannonItem(String name)
+	{
+		String n = name.toLowerCase(Locale.ROOT);
+		return n.startsWith("cannon base") || n.startsWith("cannon stand") || n.startsWith("cannon barrels")
+			|| n.startsWith("cannon furnace") || n.equals("cannonball") || n.equals("granite cannonball");
 	}
 
 	private static void addIds(Set<Integer> out, Map<String, Set<Integer>> allIds, LoadoutCalculator.Pick pick)
