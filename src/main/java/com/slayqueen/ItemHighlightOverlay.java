@@ -10,7 +10,7 @@ import net.runelite.client.game.ItemManager;
 import net.runelite.client.ui.overlay.WidgetItemOverlay;
 
 /**
- * Outlines the recommended gear and items in the bank (and optionally the inventory).
+ * Outlines the recommended gear and items in the bank, worn equipment and (optionally) the inventory.
  */
 public class ItemHighlightOverlay extends WidgetItemOverlay
 {
@@ -26,14 +26,27 @@ public class ItemHighlightOverlay extends WidgetItemOverlay
 		this.itemManager = itemManager;
 		showOnBank();
 		showOnInventory();
+		showOnEquipment();
 	}
 
 	@Override
 	public void renderItemOverlay(Graphics2D graphics, int itemId, WidgetItem widgetItem)
 	{
-		boolean inBank = widgetItem.getWidget() != null
-			&& (widgetItem.getWidget().getId() >>> 16) == InterfaceID.BANKMAIN;
-		if (inBank ? !config.highlightBank() : !config.highlightInventory())
+		int group = widgetItem.getWidget() == null ? -1 : widgetItem.getWidget().getId() >>> 16;
+		boolean enabled;
+		if (group == InterfaceID.BANKMAIN)
+		{
+			enabled = config.highlightBank();
+		}
+		else if (group == InterfaceID.WORNITEMS || group == InterfaceID.EQUIPMENT)
+		{
+			enabled = config.highlightEquipment();
+		}
+		else
+		{
+			enabled = config.highlightInventory();
+		}
+		if (!enabled)
 		{
 			return;
 		}

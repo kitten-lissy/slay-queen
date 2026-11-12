@@ -344,6 +344,7 @@ public class TaskResolver
 		t.setTeleports(b.getTeleports());
 		t.setPoison(b.getPoison());
 		t.setPoisonNote(b.getPoisonNote());
+		t.setDefence(b.getDefence());
 		return t;
 	}
 }

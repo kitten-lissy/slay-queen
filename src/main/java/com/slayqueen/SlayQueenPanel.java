@@ -115,7 +115,8 @@ public class SlayQueenPanel extends PluginPanel
 		String aoeWhere = task.getAoeWhere() == null ? "" : "at " + task.getAoeWhere() + ". ";
 		String aoeNote = task.getAoe() == null ? null : aoeWhere + (task.getAoeNote() == null ? "" : task.getAoeNote());
 		row(v.getAoeIcon(), "AoE", task.aoeText(), aoeNote, task.aoeStandard() ? theme.getOwned() : theme.getDim());
-		row(v.getStyleIcon(), "Attack with", loadout == null ? "" : SlayQueenOverlay.styleLabel(loadout.getStyle()), null, theme.getOwned());
+		row(v.getStyleIcon(), "Attack with", loadout == null ? "" : SlayQueenOverlay.styleLabel(loadout.getStyle()),
+			loadout == null ? null : loadout.getReason(), theme.getOwned());
 		if (task.weaknessText() != null)
 		{
 			row(v.getWeaknessIcon(), "Weak to", task.weaknessText(), null, theme.getOwned());

@@ -22,9 +22,11 @@ import net.runelite.api.GameState;
 import net.runelite.api.Item;
 import net.runelite.api.ItemComposition;
 import net.runelite.api.ItemContainer;
+import net.runelite.api.Skill;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
 import net.runelite.api.events.ItemContainerChanged;
+import net.runelite.api.events.StatChanged;
 import net.runelite.api.events.VarbitChanged;
 import net.runelite.api.events.WidgetClosed;
 import net.runelite.api.events.WidgetLoaded;
@@ -35,6 +37,7 @@ import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.config.ConfigManager;
+import net.runelite.client.config.RuneScapeProfile;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.events.RuneScapeProfileChanged;
@@ -68,6 +71,8 @@ public class SlayQueenPlugin extends Plugin
 	private static final String LAST_TASK_KEY = "lastTask";
 	/** Set when a new task is assigned, cleared the first time the bank is closed afterwards. */
 	private static final String NEEDS_PREP_KEY = "needsPrep";
+	private static final String OLD_AOE_KEY = "preferAoe";
+	private static final String AOE_MIGRATED_KEY = "aoeOptionMigrated";
 
 	@Inject
 	private Client client;
@@ -122,6 +127,8 @@ public class SlayQueenPlugin extends Plugin
 	private boolean dirty;
 	private boolean taskDirty;
 	private boolean savingBank;
+	/** Levels used for the last loadout, to spot level-ups. */
+	private DpsCalculator.Levels lastLevels;
 
 	/** The task's general advice, as loaded. */
 	private volatile TaskInfo currentTask;
@@ -157,6 +164,7 @@ public class SlayQueenPlugin extends Plugin
 	@Override
 	protected void startUp()
 	{
+		migrateAoeOption();
 		loadData();
 		overlayManager.add(overlay);
 		overlayManager.add(highlightOverlay);
@@ -327,6 +335,18 @@ public class SlayQueenPlugin extends Plugin
 	}
 
 	@Subscribe
+	public void onStatChanged(StatChanged event)
+	{
+		Skill skill = event.getSkill();
+		if ((skill == Skill.ATTACK || skill == Skill.STRENGTH || skill == Skill.RANGED || skill == Skill.MAGIC)
+			&& !java.util.Objects.equals(levels(), lastLevels))
+		{
+			// A level-up can change which style or weapon is best
+			dirty = true;
+		}
+	}
+
+	@Subscribe
 	public void onWidgetLoaded(WidgetLoaded event)
 	{
 		if (event.getGroupId() == InterfaceID.BANKMAIN)
@@ -355,7 +375,7 @@ public class SlayQueenPlugin extends Plugin
 	{
 		if (SlayQueenConfig.GROUP.equals(event.getGroup())
 			&& !BANK_KEY.equals(event.getKey()) && !LAST_TASK_KEY.equals(event.getKey())
-			&& !NEEDS_PREP_KEY.equals(event.getKey()))
+			&& !NEEDS_PREP_KEY.equals(event.getKey()) && !AOE_MIGRATED_KEY.equals(event.getKey()))
 		{
 			clientThread.invokeLater(this::recalculate);
 		}
@@ -499,8 +519,9 @@ public class SlayQueenPlugin extends Plugin
 		addOwned(owned, allIds, itemIds(client.getItemContainer(InventoryID.WORN)));
 		ownedIdsByName = allIds;
 
-		LoadoutCalculator.Loadout result = new LoadoutCalculator(owned)
-			.calculate(task, chooseStyle(task), gearData, this::equipStats);
+		DpsCalculator.Levels lv = levels();
+		lastLevels = lv;
+		LoadoutCalculator.Loadout result = chooseLoadout(new LoadoutCalculator(owned, lv), task);
 
 		// Highlight every id with a picked name, so all potion doses and duplicates light up
 		Set<Integer> ids = new HashSet<>();
@@ -586,19 +607,84 @@ public class SlayQueenPlugin extends Plugin
 		return client.getVarbitValue(VarbitID.SLAYER_MASTER) == KRYSTILIA;
 	}
 
-	private String chooseStyle(TaskInfo task)
+	/**
+	 * Manual style from the settings, else the AoE setup when wanted and viable, else the
+	 * task's style that deals the most damage with the player's gear.
+	 */
+	private LoadoutCalculator.Loadout chooseLoadout(LoadoutCalculator calc, TaskInfo task)
 	{
 		SlayQueenConfig.StyleChoice choice = config.style();
 		if (choice != SlayQueenConfig.StyleChoice.AUTO)
 		{
-			return choice.name();
+			return calc.calculate(task, choice.name(), gearData, this::equipStats, "Chosen in the plugin settings");
 		}
-		if (config.preferAoe() && task.aoeStandard())
+		if (config.useAoe() && task.getAoe() != null)
 		{
-			return "CHINCHOMPA".equals(task.getAoe()) ? LoadoutCalculator.CHINCHOMPA : LoadoutCalculator.AOE_MAGIC;
+			String aoe = "CHINCHOMPA".equals(task.getAoe()) ? LoadoutCalculator.CHINCHOMPA : LoadoutCalculator.AOE_MAGIC;
+			return calc.calculate(task, aoe, gearData, this::equipStats, "AoE works well on this task");
 		}
-		List<String> styles = task.getStyles();
-		return styles == null || styles.isEmpty() ? "MELEE" : styles.get(0);
+		return calc.best(task, gearData, this::equipStats);
+	}
+
+	/**
+	 * The player's real (unboosted) combat levels, so a drained or potted stat doesn't change
+	 * the gear advice. Null before login.
+	 */
+	private DpsCalculator.Levels levels()
+	{
+		if (client.getGameState() != GameState.LOGGED_IN)
+		{
+			return null;
+		}
+		return new DpsCalculator.Levels(
+			client.getRealSkillLevel(Skill.ATTACK),
+			client.getRealSkillLevel(Skill.STRENGTH),
+			client.getRealSkillLevel(Skill.RANGED),
+			client.getRealSkillLevel(Skill.MAGIC));
+	}
+
+	/**
+	 * The old "Use burst/barrage setups" option (on by default) became "Use AoE when viable"
+	 * (off by default). Players who had the old option on keep AoE.
+	 */
+	private void migrateAoeOption()
+	{
+		if (configManager.getConfiguration(SlayQueenConfig.GROUP, AOE_MIGRATED_KEY) != null)
+		{
+			return;
+		}
+		String old = configManager.getConfiguration(SlayQueenConfig.GROUP, OLD_AOE_KEY);
+		boolean wasOn;
+		if (old != null)
+		{
+			wasOn = Boolean.parseBoolean(old);
+		}
+		else
+		{
+			// The old option was on by default; anyone who has used the plugin before had it on
+			wasOn = usedBefore();
+		}
+		// RuneLite has already stored the new option's default (off) by now, so set it outright;
+		// the marker below makes sure this only ever happens once
+		if (wasOn)
+		{
+			configManager.setConfiguration(SlayQueenConfig.GROUP, "useAoe", true);
+		}
+		configManager.unsetConfiguration(SlayQueenConfig.GROUP, OLD_AOE_KEY);
+		configManager.unsetConfiguration(SlayQueenConfig.GROUP, "aoeMigrated");
+		configManager.setConfiguration(SlayQueenConfig.GROUP, AOE_MIGRATED_KEY, true);
+	}
+
+	private boolean usedBefore()
+	{
+		for (RuneScapeProfile profile : configManager.getRSProfiles())
+		{
+			if (!configManager.getRSProfileConfigurationKeys(SlayQueenConfig.GROUP, profile.getKey(), "").isEmpty())
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**

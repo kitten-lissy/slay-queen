@@ -104,7 +104,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Aberrant spectre",
+   "level": 90,
+   "magicLevel": 105,
+   "magicAttack": 0,
+   "stab": 20,
+   "slash": 20,
+   "crush": 20,
+   "magic": 0,
+   "rangedLight": 15,
+   "rangedStandard": -15,
+   "rangedHeavy": 15,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Aberrant_spectre"
+  }
  },
  {
   "name": "Abyssal demons",
@@ -236,7 +251,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Abyssal demon (Catacombs of Kourend)",
+   "level": 135,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 20,
+   "slash": 20,
+   "crush": 20,
+   "magic": 0,
+   "rangedLight": 20,
+   "rangedStandard": 20,
+   "rangedHeavy": 20,
+   "size": 1,
+   "note": "Catacombs version (stats match the other versions)",
+   "source": "https://oldschool.runescape.wiki/w/Abyssal_demon"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Abyssal_demons"
  },
  {
   "name": "The Abyssal Sire",
@@ -291,7 +323,23 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (8)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Abyssal Sire (Phase 1)",
+   "level": 250,
+   "magicLevel": 200,
+   "magicAttack": 0,
+   "stab": 40,
+   "slash": 60,
+   "crush": 50,
+   "magic": 20,
+   "rangedLight": 60,
+   "rangedStandard": 60,
+   "rangedHeavy": 60,
+   "size": 6,
+   "note": "wiki default version (phase 1)",
+   "source": "https://oldschool.runescape.wiki/w/Abyssal_Sire"
+  }
  },
  {
   "name": "The Alchemical Hydra",
@@ -374,7 +422,23 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poison pools (special attack)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Alchemical Hydra (Serpentine)",
+   "level": 100,
+   "magicLevel": 260,
+   "magicAttack": 45,
+   "stab": 75,
+   "slash": 150,
+   "crush": 150,
+   "magic": 150,
+   "rangedLight": 45,
+   "rangedStandard": 45,
+   "rangedHeavy": 45,
+   "size": 6,
+   "note": "wiki default version (stats match all phases)",
+   "source": "https://oldschool.runescape.wiki/w/Alchemical_Hydra"
+  }
  },
  {
   "name": "Ankou",
@@ -466,7 +530,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Ankou (Level 75)",
+   "level": 60,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 75)",
+   "source": "https://oldschool.runescape.wiki/w/Ankou"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Ankou"
  },
  {
   "name": "Aquanites",
@@ -535,7 +616,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Aquanite (Lure)",
+   "level": 70,
+   "magicLevel": 170,
+   "magicAttack": 50,
+   "stab": 60,
+   "slash": 80,
+   "crush": 80,
+   "magic": 140,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 2,
+   "note": "wiki default version (lured)",
+   "source": "https://oldschool.runescape.wiki/w/Aquanite"
+  }
  },
  {
   "name": "Araxxor",
@@ -592,7 +689,23 @@
   ],
   "poison": "VENOM",
   "poisonNote": "Envenoms",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Araxxor (In combat)",
+   "level": 135,
+   "magicLevel": 190,
+   "magicAttack": 260,
+   "stab": 160,
+   "slash": 75,
+   "crush": 15,
+   "magic": 237,
+   "rangedLight": 218,
+   "rangedStandard": 218,
+   "rangedHeavy": 218,
+   "size": 7,
+   "note": "wiki default version (not enraged)",
+   "source": "https://oldschool.runescape.wiki/w/Araxxor"
+  }
  },
  {
   "name": "Araxytes",
@@ -657,7 +770,28 @@
   ],
   "poison": "VENOM",
   "poisonNote": "Envenoms (starting at 6)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Araxyte (Level 96)",
+   "level": 60,
+   "magicLevel": 60,
+   "magicAttack": 0,
+   "stab": 60,
+   "slash": 30,
+   "crush": 20,
+   "magic": 20,
+   "rangedLight": 20,
+   "rangedStandard": 20,
+   "rangedHeavy": 20,
+   "size": 1,
+   "note": "level 96, Morytania Spider Cave",
+   "source": "https://oldschool.runescape.wiki/w/Araxyte"
+  },
+  "aoe": "BARRAGE",
+  "aoeLevel": "OPTIONAL",
+  "aoeWhere": "Morytania Spider Cave (multicombat parts)",
+  "aoeNote": "A Venator bow is easier here, since the larger 2x2 araxytes are harder to stack",
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Araxytes"
  },
  {
   "name": "Aviansies",
@@ -769,7 +903,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Aviansie (Level 69)",
+   "level": 70,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": -20,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (level 69)",
+   "source": "https://oldschool.runescape.wiki/w/Aviansie"
+  }
  },
  {
   "name": "Bandits",
@@ -838,7 +988,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Bandit (Level 130)",
+   "level": 57,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 23,
+   "crush": 22,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "level 130, Wilderness Bandit Camp (Krystilia task)",
+   "source": "https://oldschool.runescape.wiki/w/Bandit"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Bandits"
  },
  {
   "name": "Banshees",
@@ -905,7 +1072,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Banshee",
+   "level": 22,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 5,
+   "slash": 5,
+   "crush": 5,
+   "magic": 0,
+   "rangedLight": 5,
+   "rangedStandard": 5,
+   "rangedHeavy": 5,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Banshee"
+  }
  },
  {
   "name": "Barrows Brothers",
@@ -1078,7 +1260,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Basilisk",
+   "level": 75,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 20,
+   "slash": 20,
+   "crush": 0,
+   "magic": 20,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Basilisk"
+  }
  },
  {
   "name": "Bats",
@@ -1120,7 +1317,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Giant bat (Normal)",
+   "level": 22,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 10,
+   "crush": 12,
+   "magic": 10,
+   "rangedLight": 8,
+   "rangedStandard": 8,
+   "rangedHeavy": 8,
+   "size": 2,
+   "note": "giant bat",
+   "source": "https://oldschool.runescape.wiki/w/Giant_bat"
+  }
  },
  {
   "name": "Bears",
@@ -1169,7 +1382,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Grizzly bear (Level 21)",
+   "level": 15,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (grizzly bear level 21)",
+   "source": "https://oldschool.runescape.wiki/w/Grizzly_bear"
+  }
  },
  {
   "name": "Birds",
@@ -1204,7 +1433,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Chicken (Normal)",
+   "level": 1,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": -42,
+   "slash": -42,
+   "crush": -42,
+   "magic": -42,
+   "rangedLight": -42,
+   "rangedStandard": -42,
+   "rangedHeavy": -42,
+   "size": 1,
+   "note": "chicken",
+   "source": "https://oldschool.runescape.wiki/w/Chicken"
+  }
  },
  {
   "name": "Black demons",
@@ -1347,7 +1592,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Black demon (Level 172)",
+   "level": 152,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": -10,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 3,
+   "note": "wiki default version (level 172)",
+   "source": "https://oldschool.runescape.wiki/w/Black_demon"
+  }
  },
  {
   "name": "Black dragons",
@@ -1497,7 +1758,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Black dragon (Level 227)",
+   "level": 200,
+   "magicLevel": 100,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 70,
+   "crush": 70,
+   "magic": 60,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 10,
+   "size": 4,
+   "note": "wiki default version (level 227)",
+   "source": "https://oldschool.runescape.wiki/w/Black_dragon"
+  }
  },
  {
   "name": "Black Knights",
@@ -1561,7 +1838,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Black Knight (Hostile, male)",
+   "level": 25,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 73,
+   "slash": 76,
+   "crush": 70,
+   "magic": -11,
+   "rangedLight": 72,
+   "rangedStandard": 72,
+   "rangedHeavy": 72,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Black_Knight"
+  }
  },
  {
   "name": "Bloodveld",
@@ -1715,7 +2007,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Mutated Bloodveld",
+   "level": 30,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "mutated bloodveld, Catacombs of Kourend",
+   "source": "https://oldschool.runescape.wiki/w/Mutated_Bloodveld"
+  }
  },
  {
   "name": "Blue dragons",
@@ -1874,7 +2182,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Blue dragon (1)",
+   "level": 95,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 70,
+   "crush": 70,
+   "magic": 60,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 10,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Blue_dragon"
+  }
  },
  {
   "name": "Brine rats",
@@ -1955,7 +2278,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Brine rat",
+   "level": 40,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Brine_rat"
+  }
  },
  {
   "name": "Callisto",
@@ -2038,7 +2376,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Callisto",
+   "level": 225,
+   "magicLevel": 140,
+   "magicAttack": 0,
+   "stab": 150,
+   "slash": 130,
+   "crush": 125,
+   "magic": 0,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 50,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/Callisto"
+  }
  },
  {
   "name": "Catablepon",
@@ -2088,7 +2441,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Catablepon (Level 49)",
+   "level": 40,
+   "magicLevel": 60,
+   "magicAttack": 0,
+   "stab": 40,
+   "slash": 30,
+   "crush": 20,
+   "magic": 20,
+   "rangedLight": 40,
+   "rangedStandard": 40,
+   "rangedHeavy": 40,
+   "size": 2,
+   "note": "wiki default version (level 49)",
+   "source": "https://oldschool.runescape.wiki/w/Catablepon"
+  }
  },
  {
   "name": "Cave bugs",
@@ -2155,7 +2524,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Cave bug (Level 6)",
+   "level": 6,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 10,
+   "crush": 5,
+   "magic": 5,
+   "rangedLight": 10,
+   "rangedStandard": 10,
+   "rangedHeavy": 10,
+   "size": 1,
+   "note": "wiki default version (level 6)",
+   "source": "https://oldschool.runescape.wiki/w/Cave_bug"
+  }
  },
  {
   "name": "Cave crawlers",
@@ -2214,7 +2599,22 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (8)",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Cave crawler (Standard (1))",
+   "level": 18,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 10,
+   "crush": 5,
+   "magic": 5,
+   "rangedLight": 10,
+   "rangedStandard": 10,
+   "rangedHeavy": 10,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Cave_crawler"
+  }
  },
  {
   "name": "Cave horrors",
@@ -2319,7 +2719,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Cave horror (Worker)",
+   "level": 62,
+   "magicLevel": 80,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Cave_horror"
+  }
  },
  {
   "name": "Cave kraken",
@@ -2372,7 +2787,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Cave kraken (Cave kraken)",
+   "level": 150,
+   "magicLevel": 120,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": -63,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Cave_kraken"
+  }
  },
  {
   "name": "Cave slimes",
@@ -2443,7 +2873,22 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (3)",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Cave slime",
+   "level": 35,
+   "magicLevel": 13,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Cave_slime"
+  }
  },
  {
   "name": "Cerberus",
@@ -2514,7 +2959,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Cerberus",
+   "level": 100,
+   "magicLevel": 220,
+   "magicAttack": 50,
+   "stab": 50,
+   "slash": 100,
+   "crush": 25,
+   "magic": 65,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/Cerberus"
+  }
  },
  {
   "name": "Chaos druids",
@@ -2582,7 +3042,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Chaos druid",
+   "level": 12,
+   "magicLevel": 10,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Chaos_druid"
+  }
  },
  {
   "name": "The Chaos Elemental",
@@ -2641,7 +3116,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Chaos Elemental",
+   "level": 270,
+   "magicLevel": 270,
+   "magicAttack": 0,
+   "stab": 70,
+   "slash": 70,
+   "crush": 70,
+   "magic": 70,
+   "rangedLight": 70,
+   "rangedStandard": 70,
+   "rangedHeavy": 70,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Chaos_Elemental"
+  }
  },
  {
   "name": "The Chaos Fanatic",
@@ -2696,7 +3186,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Chaos Fanatic",
+   "level": 220,
+   "magicLevel": 200,
+   "magicAttack": 0,
+   "stab": 260,
+   "slash": 260,
+   "crush": 250,
+   "magic": 280,
+   "rangedLight": 80,
+   "rangedStandard": 50,
+   "rangedHeavy": 80,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Chaos_Fanatic"
+  }
  },
  {
   "name": "Cockatrice",
@@ -2769,7 +3274,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Cockatrice",
+   "level": 37,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 10,
+   "crush": 0,
+   "magic": 10,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Cockatrice"
+  }
  },
  {
   "name": "Cows",
@@ -2803,7 +3323,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Cow (1)",
+   "level": 1,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": -21,
+   "slash": -21,
+   "crush": -21,
+   "magic": -21,
+   "rangedLight": -21,
+   "rangedStandard": -21,
+   "rangedHeavy": -21,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Cow"
+  }
  },
  {
   "name": "Crabs",
@@ -2848,7 +3383,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Rock Crab (Active)",
+   "level": 1,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "rock crab",
+   "source": "https://oldschool.runescape.wiki/w/Rock_Crab"
+  }
  },
  {
   "name": "Crawling hands",
@@ -2900,7 +3451,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Crawling Hand (Level 7)",
+   "level": 3,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 7)",
+   "source": "https://oldschool.runescape.wiki/w/Crawling_Hand"
+  }
  },
  {
   "name": "Crazy Archaeologists",
@@ -2963,7 +3530,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Crazy archaeologist",
+   "level": 240,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 5,
+   "slash": 5,
+   "crush": 30,
+   "magic": 250,
+   "rangedLight": 250,
+   "rangedStandard": 250,
+   "rangedHeavy": 250,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Crazy_archaeologist"
+  }
  },
  {
   "name": "Crocodiles",
@@ -3021,7 +3603,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Crocodile (Water)",
+   "level": 54,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 20,
+   "slash": 12,
+   "crush": 22,
+   "magic": 10,
+   "rangedLight": 20,
+   "rangedStandard": 20,
+   "rangedHeavy": 20,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Crocodile"
+  }
  },
  {
   "name": "Custodian Stalkers",
@@ -3102,7 +3699,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Mature custodian stalker",
+   "level": 45,
+   "magicLevel": 40,
+   "magicAttack": 15,
+   "stab": 30,
+   "slash": -10,
+   "crush": 50,
+   "magic": 35,
+   "rangedLight": -10,
+   "rangedStandard": 5,
+   "rangedHeavy": 30,
+   "size": 1,
+   "note": "mature stalker (middle of the three tiers)",
+   "source": "https://oldschool.runescape.wiki/w/Mature_custodian_stalker"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Custodian_stalker"
  },
  {
   "name": "Dagannoth",
@@ -3217,7 +3831,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Dagannoth (Level 74 (1))",
+   "level": 50,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 74)",
+   "source": "https://oldschool.runescape.wiki/w/Dagannoth"
+  }
  },
  {
   "name": "Dagannoth Kings",
@@ -3401,7 +4031,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Dark beast",
+   "level": 120,
+   "magicLevel": 160,
+   "magicAttack": 0,
+   "stab": 30,
+   "slash": 40,
+   "crush": 100,
+   "magic": 90,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Dark_beast"
+  }
  },
  {
   "name": "Dark warriors",
@@ -3464,7 +4109,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Dark warrior (Level 8)",
+   "level": 5,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 96,
+   "slash": 79,
+   "crush": 59,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 8, Dark Warriors' Fortress)",
+   "source": "https://oldschool.runescape.wiki/w/Dark_warrior"
+  }
  },
  {
   "name": "Deranged Archaeologist",
@@ -3521,7 +4182,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Deranged archaeologist",
+   "level": 280,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 20,
+   "slash": 20,
+   "crush": 50,
+   "magic": 300,
+   "rangedLight": 300,
+   "rangedStandard": 300,
+   "rangedHeavy": 300,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Deranged_archaeologist"
+  }
  },
  {
   "name": "Dogs",
@@ -3561,7 +4237,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Jackal",
+   "level": 15,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "jackal",
+   "source": "https://oldschool.runescape.wiki/w/Jackal"
+  }
  },
  {
   "name": "Drakes",
@@ -3669,7 +4361,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Drake",
+   "level": 120,
+   "magicLevel": 112,
+   "magicAttack": 0,
+   "stab": 5,
+   "slash": 60,
+   "crush": 60,
+   "magic": 20,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 0,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/Drake"
+  }
  },
  {
   "name": "Duke Sucellus",
@@ -3721,7 +4428,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Duke Sucellus (Post-quest, Awake)",
+   "level": 275,
+   "magicLevel": 310,
+   "magicAttack": 150,
+   "stab": 255,
+   "slash": 45,
+   "crush": 190,
+   "magic": 440,
+   "rangedLight": 320,
+   "rangedStandard": 320,
+   "rangedHeavy": 320,
+   "size": 7,
+   "note": "post-quest, awake",
+   "source": "https://oldschool.runescape.wiki/w/Duke_Sucellus"
+  }
  },
  {
   "name": "Dust devils",
@@ -3831,7 +4554,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Dust devil (Catacombs of Kourend)",
+   "level": 40,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "Catacombs of Kourend (where they are barraged)",
+   "source": "https://oldschool.runescape.wiki/w/Dust_devil"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Dust_devils"
  },
  {
   "name": "Dwarves",
@@ -3879,7 +4619,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Dwarf (Standard (Level 10))",
+   "level": 6,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 5,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 10)",
+   "source": "https://oldschool.runescape.wiki/w/Dwarf"
+  }
  },
  {
   "name": "Earth warriors",
@@ -3959,7 +4715,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Earth warrior",
+   "level": 42,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 30,
+   "slash": 40,
+   "crush": 20,
+   "magic": 10,
+   "rangedLight": 30,
+   "rangedStandard": 30,
+   "rangedHeavy": 30,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Earth_warrior"
+  }
  },
  {
   "name": "Elves",
@@ -4037,7 +4808,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Elf Warrior (1)",
+   "level": 80,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 70,
+   "crush": 70,
+   "magic": 60,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 50,
+   "size": 1,
+   "note": "elf warrior",
+   "source": "https://oldschool.runescape.wiki/w/Elf_Warrior"
+  }
  },
  {
   "name": "Ents",
@@ -4092,7 +4879,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Ent (Wilderness)",
+   "level": 75,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 70,
+   "crush": 70,
+   "magic": 40,
+   "rangedLight": 30,
+   "rangedStandard": 30,
+   "rangedHeavy": 30,
+   "size": 2,
+   "note": "Wilderness (Krystilia task)",
+   "source": "https://oldschool.runescape.wiki/w/Ent"
+  }
  },
  {
   "name": "Fever spiders",
@@ -4145,7 +4948,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "Inflicts disease (8), not poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Fever spider",
+   "level": 40,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 20,
+   "slash": 15,
+   "crush": 10,
+   "magic": 15,
+   "rangedLight": 15,
+   "rangedStandard": 15,
+   "rangedHeavy": 15,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Fever_spider"
+  }
  },
  {
   "name": "Fire giants",
@@ -4318,7 +5136,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Fire giant (Level 86)",
+   "level": 65,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 3,
+   "crush": 2,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (level 86)",
+   "source": "https://oldschool.runescape.wiki/w/Fire_giant"
+  }
  },
  {
   "name": "Fleshcrawlers",
@@ -4363,7 +5197,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Flesh Crawler (Level 28)",
+   "level": 10,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 15,
+   "slash": 15,
+   "crush": 15,
+   "magic": 15,
+   "rangedLight": 15,
+   "rangedStandard": 15,
+   "rangedHeavy": 15,
+   "size": 2,
+   "note": "wiki default version (level 28)",
+   "source": "https://oldschool.runescape.wiki/w/Flesh_Crawler"
+  }
  },
  {
   "name": "Fossil island wyverns",
@@ -4437,7 +5287,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Spitting Wyvern",
+   "level": 90,
+   "magicLevel": 125,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 70,
+   "crush": 70,
+   "magic": 140,
+   "rangedLight": 120,
+   "rangedStandard": 70,
+   "rangedHeavy": 120,
+   "size": 3,
+   "note": "spitting wyvern",
+   "source": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+  }
  },
  {
   "name": "Frost dragons",
@@ -4497,7 +5363,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Frost dragon",
+   "level": 150,
+   "magicLevel": 150,
+   "magicAttack": 0,
+   "stab": 25,
+   "slash": 90,
+   "crush": 15,
+   "magic": 50,
+   "rangedLight": 70,
+   "rangedStandard": 50,
+   "rangedHeavy": 30,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Frost_dragon"
+  }
  },
  {
   "name": "Gargoyles",
@@ -4577,7 +5458,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Gargoyle (Upstairs)",
+   "level": 107,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 60,
+   "crush": -20,
+   "magic": 20,
+   "rangedLight": 20,
+   "rangedStandard": 20,
+   "rangedHeavy": -20,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Gargoyle"
+  }
  },
  {
   "name": "General Graardor",
@@ -4662,7 +5558,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "General Graardor",
+   "level": 250,
+   "magicLevel": 80,
+   "magicAttack": 0,
+   "stab": 90,
+   "slash": 90,
+   "crush": 90,
+   "magic": 298,
+   "rangedLight": 90,
+   "rangedStandard": 90,
+   "rangedHeavy": 90,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/General_Graardor"
+  }
  },
  {
   "name": "Ghosts",
@@ -4702,7 +5613,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Ghost (Level 19)",
+   "level": 18,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 5,
+   "slash": 5,
+   "crush": 5,
+   "magic": -5,
+   "rangedLight": 5,
+   "rangedStandard": 5,
+   "rangedHeavy": 5,
+   "size": 1,
+   "note": "wiki default version (level 19)",
+   "source": "https://oldschool.runescape.wiki/w/Ghost"
+  }
  },
  {
   "name": "Ghouls",
@@ -4752,7 +5679,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Ghoul",
+   "level": 30,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Ghoul"
+  }
  },
  {
   "name": "The Giant Mole",
@@ -4811,7 +5753,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Giant Mole",
+   "level": 200,
+   "magicLevel": 200,
+   "magicAttack": 0,
+   "stab": 60,
+   "slash": 80,
+   "crush": 100,
+   "magic": 80,
+   "rangedLight": 60,
+   "rangedStandard": 60,
+   "rangedHeavy": 60,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Giant_Mole"
+  }
  },
  {
   "name": "Goblins",
@@ -4845,7 +5802,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Goblin (Level 2)",
+   "level": 1,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": -15,
+   "slash": -15,
+   "crush": -15,
+   "magic": -15,
+   "rangedLight": -15,
+   "rangedStandard": -15,
+   "rangedHeavy": -15,
+   "size": 1,
+   "note": "wiki default version (level 2)",
+   "source": "https://oldschool.runescape.wiki/w/Goblin"
+  }
  },
  {
   "name": "Greater demons",
@@ -5002,7 +5975,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Greater demon (Level 92)",
+   "level": 81,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": -10,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 3,
+   "note": "wiki default version (level 92)",
+   "source": "https://oldschool.runescape.wiki/w/Greater_demon"
+  }
  },
  {
   "name": "Green dragons",
@@ -5083,7 +6072,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Green dragon (Level 79)",
+   "level": 68,
+   "magicLevel": 68,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 40,
+   "crush": 40,
+   "magic": 30,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 10,
+   "size": 4,
+   "note": "wiki default version (level 79)",
+   "source": "https://oldschool.runescape.wiki/w/Green_dragon"
+  }
  },
  {
   "name": "The Grotesque Guardians",
@@ -5212,7 +6217,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Gryphon",
+   "level": 50,
+   "magicLevel": 50,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 20,
+   "crush": 40,
+   "magic": 100,
+   "rangedLight": 60,
+   "rangedStandard": 60,
+   "rangedHeavy": 60,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Gryphon"
+  }
  },
  {
   "name": "Harpie bug swarms",
@@ -5267,7 +6287,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Harpie Bug Swarm",
+   "level": 32,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 5,
+   "crush": 10,
+   "magic": 5,
+   "rangedLight": 10,
+   "rangedStandard": 10,
+   "rangedHeavy": 10,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Harpie_Bug_Swarm"
+  }
  },
  {
   "name": "Hellhounds",
@@ -5391,7 +6426,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Hellhound (Level 122)",
+   "level": 102,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (level 122)",
+   "source": "https://oldschool.runescape.wiki/w/Hellhound"
+  }
  },
  {
   "name": "Hill giants",
@@ -5456,7 +6507,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Hill Giant (1)",
+   "level": 26,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Hill_Giant"
+  }
  },
  {
   "name": "Hobgoblins",
@@ -5507,7 +6573,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Hobgoblin (Hobgoblin)",
+   "level": 24,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Hobgoblin"
+  }
  },
  {
   "name": "Hydras",
@@ -5608,7 +6689,22 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poison splats (special attack)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Hydra",
+   "level": 100,
+   "magicLevel": 210,
+   "magicAttack": 0,
+   "stab": 160,
+   "slash": 160,
+   "crush": 160,
+   "magic": 160,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Hydra"
+  }
  },
  {
   "name": "Icefiends",
@@ -5652,7 +6748,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Icefiend (Level 13)",
+   "level": 12,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 13)",
+   "source": "https://oldschool.runescape.wiki/w/Icefiend"
+  }
  },
  {
   "name": "Ice giants",
@@ -5733,7 +6845,22 @@
   "poison": "NONE",
   "poisonNote": "No poison",
   "cannonNote": "Not in the Settlement Ruins or Ruins of Tapoyauik",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Ice giant (1)",
+   "level": 40,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 3,
+   "crush": 2,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Ice_giant"
+  }
  },
  {
   "name": "Ice warriors",
@@ -5805,7 +6932,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Ice warrior (Normal)",
+   "level": 47,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 30,
+   "slash": 40,
+   "crush": 20,
+   "magic": 10,
+   "rangedLight": 30,
+   "rangedStandard": 30,
+   "rangedHeavy": 30,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Ice_warrior"
+  }
  },
  {
   "name": "Infernal mages",
@@ -5868,7 +7010,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Infernal Mage",
+   "level": 60,
+   "magicLevel": 75,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 40,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Infernal_Mage"
+  }
  },
  {
   "name": "TzTok-Jad",
@@ -5907,7 +7064,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "TzTok-Jad",
+   "level": 480,
+   "magicLevel": 480,
+   "magicAttack": 60,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/TzTok-Jad"
+  }
  },
  {
   "name": "Jellies",
@@ -6016,7 +7188,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Warped Jelly",
+   "level": 70,
+   "magicLevel": 95,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "warped jelly, Catacombs of Kourend",
+   "source": "https://oldschool.runescape.wiki/w/Warped_Jelly"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Jellies"
  },
  {
   "name": "Jungle horrors",
@@ -6078,7 +7267,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Jungle horror (Worker)",
+   "level": 55,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Jungle_horror"
+  }
  },
  {
   "name": "Kalphites",
@@ -6158,7 +7362,23 @@
   ],
   "poison": "POISON",
   "poisonNote": "Workers don't poison; Soldiers (4) and Guardians (6) do",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Kalphite Soldier (Kalphite Lair)",
+   "level": 70,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 25,
+   "slash": 25,
+   "crush": 5,
+   "magic": 50,
+   "rangedLight": 50,
+   "rangedStandard": 30,
+   "rangedHeavy": 50,
+   "size": 3,
+   "note": "kalphite soldier, Kalphite Lair",
+   "source": "https://oldschool.runescape.wiki/w/Kalphite_Soldier"
+  }
  },
  {
   "name": "The Kalphite Queen",
@@ -6233,7 +7453,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "Queen doesn't poison; Guardians on the way do (6)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Kalphite Queen (Crawling)",
+   "level": 300,
+   "magicLevel": 150,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 50,
+   "crush": 10,
+   "magic": 100,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 5,
+   "note": "first form (crawling)",
+   "source": "https://oldschool.runescape.wiki/w/Kalphite_Queen"
+  }
  },
  {
   "name": "Killerwatts",
@@ -6294,7 +7530,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Killerwatt (Attacking)",
+   "level": 40,
+   "magicLevel": 67,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 10,
+   "crush": 10,
+   "magic": 20,
+   "rangedLight": -10,
+   "rangedStandard": -10,
+   "rangedHeavy": -10,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Killerwatt"
+  }
  },
  {
   "name": "The King Black Dragon",
@@ -6360,7 +7611,22 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (8)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "King Black Dragon",
+   "level": 240,
+   "magicLevel": 240,
+   "magicAttack": 0,
+   "stab": 40,
+   "slash": 90,
+   "crush": 90,
+   "magic": 80,
+   "rangedLight": 70,
+   "rangedStandard": 70,
+   "rangedHeavy": 40,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/King_Black_Dragon"
+  }
  },
  {
   "name": "The Cave Kraken Boss",
@@ -6406,7 +7672,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Kraken (Kraken)",
+   "level": 1,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 130,
+   "rangedLight": 300,
+   "rangedStandard": 300,
+   "rangedHeavy": 300,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Kraken"
+  }
  },
  {
   "name": "Kree'arra",
@@ -6511,7 +7792,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Kree'arra",
+   "level": 260,
+   "magicLevel": 200,
+   "magicAttack": 0,
+   "stab": 180,
+   "slash": 180,
+   "crush": 180,
+   "magic": 200,
+   "rangedLight": 200,
+   "rangedStandard": 200,
+   "rangedHeavy": 200,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/Kree'arra"
+  }
  },
  {
   "name": "K'ril Tsutsaroth",
@@ -6602,7 +7898,22 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (16)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "K'ril Tsutsaroth",
+   "level": 270,
+   "magicLevel": 200,
+   "magicAttack": 0,
+   "stab": 70,
+   "slash": 80,
+   "crush": 80,
+   "magic": 80,
+   "rangedLight": 80,
+   "rangedStandard": 80,
+   "rangedHeavy": 80,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth"
+  }
  },
  {
   "name": "Kurask",
@@ -6703,7 +8014,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Kurask (Normal)",
+   "level": 105,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 20,
+   "crush": 20,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Kurask"
+  }
  },
  {
   "name": "Lava Dragons",
@@ -6787,7 +8113,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Lava dragon",
+   "level": 220,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 20,
+   "slash": 90,
+   "crush": 90,
+   "magic": 80,
+   "rangedLight": 70,
+   "rangedStandard": 70,
+   "rangedHeavy": 20,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Lava_dragon"
+  }
  },
  {
   "name": "Lesser demons",
@@ -6858,7 +8199,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Lesser demon (Level 82)",
+   "level": 71,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": -10,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (level 82)",
+   "source": "https://oldschool.runescape.wiki/w/Lesser_demon"
+  }
  },
  {
   "name": "Lesser Nagua",
@@ -6940,7 +8297,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Sulphur Nagua",
+   "level": 40,
+   "magicLevel": 50,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 50,
+   "crush": 10,
+   "magic": 200,
+   "rangedLight": 200,
+   "rangedStandard": 200,
+   "rangedHeavy": 200,
+   "size": 2,
+   "note": "sulphur nagua, Neypotzli",
+   "source": "https://oldschool.runescape.wiki/w/Sulphur_Nagua"
+  }
  },
  {
   "name": "Lizardmen",
@@ -7054,7 +8427,23 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (3); shamans (10)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Lizardman shaman (Standard)",
+   "level": 140,
+   "magicLevel": 130,
+   "magicAttack": 0,
+   "stab": -20,
+   "slash": 40,
+   "crush": 30,
+   "magic": 50,
+   "rangedLight": -10,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 3,
+   "note": "lizardman shaman",
+   "source": "https://oldschool.runescape.wiki/w/Lizardman_shaman"
+  }
  },
  {
   "name": "Lizards",
@@ -7143,7 +8532,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Desert Lizard (Green)",
+   "level": 20,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 5,
+   "slash": 15,
+   "crush": 15,
+   "magic": 0,
+   "rangedLight": 5,
+   "rangedStandard": 5,
+   "rangedHeavy": 5,
+   "size": 2,
+   "note": "desert lizard",
+   "source": "https://oldschool.runescape.wiki/w/Desert_Lizard"
+  }
  },
  {
   "name": "The Maggot King",
@@ -7197,7 +8602,23 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Maggot King (Far)",
+   "level": 200,
+   "magicLevel": 200,
+   "magicAttack": 200,
+   "stab": 172,
+   "slash": 100,
+   "crush": 45,
+   "magic": 150,
+   "rangedLight": 232,
+   "rangedStandard": 158,
+   "rangedHeavy": 43,
+   "size": 5,
+   "note": "wiki default version",
+   "source": "https://oldschool.runescape.wiki/w/Maggot_King"
+  }
  },
  {
   "name": "Magic axes",
@@ -7270,7 +8691,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Magic axe (Normal)",
+   "level": 29,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 5,
+   "crush": 15,
+   "magic": 5,
+   "rangedLight": 10,
+   "rangedStandard": 10,
+   "rangedHeavy": 10,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Magic_axe"
+  }
  },
  {
   "name": "Mammoths",
@@ -7333,7 +8769,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Mammoth (Normal)",
+   "level": 50,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Mammoth"
+  }
  },
  {
   "name": "Metal dragons",
@@ -7488,7 +8939,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Iron dragon (Standard)",
+   "level": 165,
+   "magicLevel": 100,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 70,
+   "crush": 70,
+   "magic": 30,
+   "rangedLight": 90,
+   "rangedStandard": 90,
+   "rangedHeavy": 10,
+   "size": 4,
+   "note": "iron dragon (steel/mithril/adamant/rune differ)",
+   "source": "https://oldschool.runescape.wiki/w/Iron_dragon"
+  }
  },
  {
   "name": "Minotaurs",
@@ -7532,7 +8999,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Minotaur (Level 12)",
+   "level": 10,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": -21,
+   "slash": -21,
+   "crush": -21,
+   "magic": -21,
+   "rangedLight": -21,
+   "rangedStandard": -21,
+   "rangedHeavy": -21,
+   "size": 1,
+   "note": "wiki default version (level 12)",
+   "source": "https://oldschool.runescape.wiki/w/Minotaur"
+  }
  },
  {
   "name": "Mogres",
@@ -7587,7 +9070,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Mogre",
+   "level": 48,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Mogre"
+  }
  },
  {
   "name": "Molanisks",
@@ -7658,7 +9156,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Molanisk",
+   "level": 50,
+   "magicLevel": 0,
+   "magicAttack": 0,
+   "stab": 45,
+   "slash": 45,
+   "crush": 35,
+   "magic": 30,
+   "rangedLight": 55,
+   "rangedStandard": 55,
+   "rangedHeavy": 55,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Molanisk"
+  }
  },
  {
   "name": "Monkeys",
@@ -7708,7 +9221,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Maniacal monkey",
+   "level": 10,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "maniacal monkey, Kruk's Dungeon",
+   "source": "https://oldschool.runescape.wiki/w/Maniacal_monkey"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Maniacal_monkey/Strategies"
  },
  {
   "name": "Moss giants",
@@ -7784,7 +9314,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Moss giant (Level 42)",
+   "level": 30,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (level 42)",
+   "source": "https://oldschool.runescape.wiki/w/Moss_giant"
+  }
  },
  {
   "name": "Mutated zygomites",
@@ -7875,7 +9421,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Zygomite (Level 74)",
+   "level": 65,
+   "magicLevel": 65,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 10,
+   "crush": 10,
+   "magic": 20,
+   "rangedLight": 20,
+   "rangedStandard": 20,
+   "rangedHeavy": 20,
+   "size": 1,
+   "note": "level 74",
+   "source": "https://oldschool.runescape.wiki/w/Zygomite"
+  }
  },
  {
   "name": "Nechryael",
@@ -7998,7 +9560,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Greater Nechryael (Regular)",
+   "level": 85,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 50,
+   "crush": 50,
+   "magic": 0,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 50,
+   "size": 1,
+   "note": "greater nechryael",
+   "source": "https://oldschool.runescape.wiki/w/Greater_Nechryael"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Nechryael"
  },
  {
   "name": "Ogres",
@@ -8044,7 +9623,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Ogre (Level 53)",
+   "level": 43,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (level 53)",
+   "source": "https://oldschool.runescape.wiki/w/Ogre"
+  }
  },
  {
   "name": "Otherworldly beings",
@@ -8104,7 +9699,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Otherworldly being",
+   "level": 46,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 15,
+   "slash": 10,
+   "crush": 20,
+   "magic": -5,
+   "rangedLight": 15,
+   "rangedStandard": 15,
+   "rangedHeavy": 15,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Otherworldly_being"
+  }
  },
  {
   "name": "The Phantom Muspah",
@@ -8150,7 +9760,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Phantom Muspah (Ranged)",
+   "level": 200,
+   "magicLevel": 150,
+   "magicAttack": 280,
+   "stab": 185,
+   "slash": 134,
+   "crush": 120,
+   "magic": 437,
+   "rangedLight": 56,
+   "rangedStandard": 56,
+   "rangedHeavy": 56,
+   "size": 5,
+   "note": "post-quest boss, ranged form",
+   "source": "https://oldschool.runescape.wiki/w/Phantom_Muspah"
+  }
  },
  {
   "name": "Pirates",
@@ -8226,7 +9852,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Pirate (Brimhaven)",
+   "level": 21,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 3,
+   "slash": 2,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version",
+   "source": "https://oldschool.runescape.wiki/w/Pirate"
+  }
  },
  {
   "name": "Pyrefiends",
@@ -8273,7 +9915,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Pyrefiend (Level 43)",
+   "level": 22,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 10,
+   "crush": 10,
+   "magic": 0,
+   "rangedLight": 10,
+   "rangedStandard": 10,
+   "rangedHeavy": 10,
+   "size": 1,
+   "note": "wiki default version (level 43)",
+   "source": "https://oldschool.runescape.wiki/w/Pyrefiend"
+  }
  },
  {
   "name": "Rats",
@@ -8308,7 +9966,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Rat (Regular)",
+   "level": 1,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": -42,
+   "slash": -42,
+   "crush": -42,
+   "magic": -42,
+   "rangedLight": -42,
+   "rangedStandard": -42,
+   "rangedHeavy": -42,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Rat"
+  }
  },
  {
   "name": "Red dragons",
@@ -8456,7 +10129,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Red dragon (1)",
+   "level": 130,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 70,
+   "crush": 70,
+   "magic": 60,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 10,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Red_dragon"
+  }
  },
  {
   "name": "Revenants",
@@ -8587,7 +10275,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Rockslug (Adult)",
+   "level": 27,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Rockslug"
+  }
  },
  {
   "name": "Rogues",
@@ -8646,7 +10349,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Rogue (Level 135)",
+   "level": 150,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "level 135, Rogues' Castle (Krystilia task)",
+   "source": "https://oldschool.runescape.wiki/w/Rogue"
+  }
  },
  {
   "name": "Sarachnis",
@@ -8698,7 +10417,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Sarachnis",
+   "level": 150,
+   "magicLevel": 150,
+   "magicAttack": 0,
+   "stab": 60,
+   "slash": 40,
+   "crush": 10,
+   "magic": 150,
+   "rangedLight": 300,
+   "rangedStandard": 300,
+   "rangedHeavy": 300,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/Sarachnis"
+  }
  },
  {
   "name": "Scabarites",
@@ -8859,7 +10593,22 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (20)",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Scorpia",
+   "level": 180,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 246,
+   "slash": 284,
+   "crush": 284,
+   "magic": 44,
+   "rangedLight": 284,
+   "rangedStandard": 284,
+   "rangedHeavy": 284,
+   "size": 5,
+   "source": "https://oldschool.runescape.wiki/w/Scorpia"
+  }
  },
  {
   "name": "Scorpions",
@@ -8910,7 +10659,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "Level 38 scorpion variant poisons (1)",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Scorpion (Level 14)",
+   "level": 11,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 5,
+   "slash": 15,
+   "crush": 15,
+   "magic": 0,
+   "rangedLight": 5,
+   "rangedStandard": 5,
+   "rangedHeavy": 5,
+   "size": 2,
+   "note": "wiki default version (level 14)",
+   "source": "https://oldschool.runescape.wiki/w/Scorpion"
+  }
  },
  {
   "name": "Sea snakes",
@@ -8979,7 +10744,23 @@
   ],
   "poison": "POISON",
   "poisonNote": "Poisons (7)",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Sea Snake Young",
+   "level": 70,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "sea snake young",
+   "source": "https://oldschool.runescape.wiki/w/Sea_Snake_Young"
+  }
  },
  {
   "name": "Shades",
@@ -9031,7 +10812,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Shade (Stronghold of Security)",
+   "level": 130,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version",
+   "source": "https://oldschool.runescape.wiki/w/Shade"
+  }
  },
  {
   "name": "Shadow warriors",
@@ -9089,7 +10886,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Shadow warrior",
+   "level": 36,
+   "magicLevel": 0,
+   "magicAttack": 0,
+   "stab": 43,
+   "slash": 31,
+   "crush": 19,
+   "magic": 15,
+   "rangedLight": 38,
+   "rangedStandard": 38,
+   "rangedHeavy": 38,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Shadow_warrior"
+  }
  },
  {
   "name": "The Shellbane Gryphon",
@@ -9149,7 +10961,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Shellbane gryphon (Post-quest)",
+   "level": 120,
+   "magicLevel": 100,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 20,
+   "crush": 40,
+   "magic": 100,
+   "rangedLight": 60,
+   "rangedStandard": 60,
+   "rangedHeavy": 60,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Shellbane_gryphon"
+  }
  },
  {
   "name": "Skeletal wyverns",
@@ -9245,7 +11072,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Skeletal Wyvern (1)",
+   "level": 120,
+   "magicLevel": 125,
+   "magicAttack": 0,
+   "stab": 140,
+   "slash": 90,
+   "crush": 90,
+   "magic": 80,
+   "rangedLight": 140,
+   "rangedStandard": 140,
+   "rangedHeavy": 140,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Skeletal_Wyvern"
+  }
  },
  {
   "name": "Skeletons",
@@ -9323,7 +11165,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Skeleton (Level 21, 1)",
+   "level": 17,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 5,
+   "slash": 5,
+   "crush": -5,
+   "magic": 0,
+   "rangedLight": 5,
+   "rangedStandard": 5,
+   "rangedHeavy": 5,
+   "size": 1,
+   "note": "wiki default version (level 21)",
+   "source": "https://oldschool.runescape.wiki/w/Skeleton"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Skeletons"
  },
  {
   "name": "Smoke devils",
@@ -9388,7 +11247,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Smoke devil",
+   "level": 275,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 600,
+   "rangedLight": 44,
+   "rangedStandard": 44,
+   "rangedHeavy": 44,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Smoke_devil"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/Smoke_devils"
  },
  {
   "name": "Sourhogs",
@@ -9455,7 +11330,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Sourhog",
+   "level": 25,
+   "magicLevel": 25,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 30,
+   "crush": 10,
+   "magic": 30,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Sourhog"
+  }
  },
  {
   "name": "Spiders",
@@ -9505,7 +11395,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "Giant spiders don't; poison spiders (3/6) and araxytes (venom) do",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Giant spider (Level 2)",
+   "level": 1,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": -10,
+   "slash": -10,
+   "crush": -10,
+   "magic": -10,
+   "rangedLight": -10,
+   "rangedStandard": -10,
+   "rangedHeavy": -10,
+   "size": 1,
+   "note": "wiki default version (giant spider level 2)",
+   "source": "https://oldschool.runescape.wiki/w/Giant_spider"
+  }
  },
  {
   "name": "Spiritual creatures",
@@ -9694,7 +11600,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Suqah (1)",
+   "level": 95,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 70,
+   "crush": 70,
+   "magic": 90,
+   "rangedLight": 50,
+   "rangedStandard": 30,
+   "rangedHeavy": 50,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Suqah"
+  }
  },
  {
   "name": "Terror dogs",
@@ -9768,7 +11689,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Terror dog (Level 100)",
+   "level": 74,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 100)",
+   "source": "https://oldschool.runescape.wiki/w/Terror_dog"
+  }
  },
  {
   "name": "The Leviathan",
@@ -9814,7 +11751,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "The Leviathan (Post-quest)",
+   "level": 250,
+   "magicLevel": 160,
+   "magicAttack": 160,
+   "stab": 260,
+   "slash": 190,
+   "crush": 230,
+   "magic": 280,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 25,
+   "size": 7,
+   "note": "post-quest",
+   "source": "https://oldschool.runescape.wiki/w/The_Leviathan"
+  }
  },
  {
   "name": "The Whisperer",
@@ -9877,7 +11830,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "The Whisperer (Post-quest)",
+   "level": 250,
+   "magicLevel": 180,
+   "magicAttack": 190,
+   "stab": 180,
+   "slash": 300,
+   "crush": 220,
+   "magic": 10,
+   "rangedLight": 300,
+   "rangedStandard": 300,
+   "rangedHeavy": 300,
+   "size": 3,
+   "note": "post-quest",
+   "source": "https://oldschool.runescape.wiki/w/The_Whisperer"
+  }
  },
  {
   "name": "The Thermonuclear Smoke Devil",
@@ -9929,7 +11898,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Thermonuclear smoke devil",
+   "level": 360,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 11,
+   "slash": 4,
+   "crush": 9,
+   "magic": 800,
+   "rangedLight": 900,
+   "rangedStandard": 900,
+   "rangedHeavy": 900,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil"
+  }
  },
  {
   "name": "Trolls",
@@ -10038,7 +12022,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Mountain troll (Level 69)",
+   "level": 40,
+   "magicLevel": 0,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 10,
+   "magic": 200,
+   "rangedLight": 200,
+   "rangedStandard": 40,
+   "rangedHeavy": 200,
+   "size": 1,
+   "note": "wiki default version (mountain troll level 69)",
+   "source": "https://oldschool.runescape.wiki/w/Mountain_troll"
+  }
  },
  {
   "name": "Turoth",
@@ -10119,7 +12119,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Turoth (Baby)",
+   "level": 83,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 20,
+   "crush": 20,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version",
+   "source": "https://oldschool.runescape.wiki/w/Turoth"
+  }
  },
  {
   "name": "Tzhaar",
@@ -10167,7 +12183,24 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "TzHaar-Ket (Level 149)",
+   "level": 120,
+   "magicLevel": 40,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 149)",
+   "source": "https://oldschool.runescape.wiki/w/TzHaar-Ket"
+  },
+  "aoeSource": "https://oldschool.runescape.wiki/w/Slayer_task/TzHaar"
  },
  {
   "name": "Vampyres",
@@ -10300,7 +12333,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Vyrewatch Sentinel (1)",
+   "level": 180,
+   "magicLevel": 120,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 1,
+   "note": "vyrewatch sentinel",
+   "source": "https://oldschool.runescape.wiki/w/Vyrewatch_Sentinel"
+  }
  },
  {
   "name": "Vardorvis",
@@ -10421,7 +12470,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Venator (1)",
+   "level": 120,
+   "magicLevel": 100,
+   "magicAttack": 0,
+   "stab": -5,
+   "slash": 20,
+   "crush": 90,
+   "magic": 100,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Venator"
+  }
  },
  {
   "name": "Venenatis",
@@ -10494,7 +12558,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Venenatis",
+   "level": 321,
+   "magicLevel": 300,
+   "magicAttack": 0,
+   "stab": 100,
+   "slash": 100,
+   "crush": 10,
+   "magic": 300,
+   "rangedLight": 150,
+   "rangedStandard": 150,
+   "rangedHeavy": 150,
+   "size": 4,
+   "source": "https://oldschool.runescape.wiki/w/Venenatis"
+  }
  },
  {
   "name": "Vet'ion",
@@ -10566,7 +12645,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Vet'ion (Normal)",
+   "level": 395,
+   "magicLevel": 300,
+   "magicAttack": 0,
+   "stab": 201,
+   "slash": 200,
+   "crush": -10,
+   "magic": 250,
+   "rangedLight": 270,
+   "rangedStandard": 270,
+   "rangedHeavy": 270,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Vet'ion"
+  }
  },
  {
   "name": "Vorkath",
@@ -10637,7 +12731,23 @@
   ],
   "poison": "VENOM",
   "poisonNote": "Envenoms",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Vorkath (Post-quest)",
+   "level": 214,
+   "magicLevel": 150,
+   "magicAttack": 150,
+   "stab": 26,
+   "slash": 108,
+   "crush": 108,
+   "magic": 240,
+   "rangedLight": 26,
+   "rangedStandard": 26,
+   "rangedHeavy": 26,
+   "size": 7,
+   "note": "post-quest",
+   "source": "https://oldschool.runescape.wiki/w/Vorkath"
+  }
  },
  {
   "name": "Wall beasts",
@@ -10700,7 +12810,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Wall beast (Beast)",
+   "level": 16,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Wall_beast"
+  }
  },
  {
   "name": "Warped Creatures",
@@ -10772,7 +12897,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Warped Terrorbird (Level 96)",
+   "level": 20,
+   "magicLevel": 60,
+   "magicAttack": 0,
+   "stab": 50,
+   "slash": 50,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 20,
+   "rangedStandard": 62,
+   "rangedHeavy": 62,
+   "size": 2,
+   "note": "warped terrorbird level 96",
+   "source": "https://oldschool.runescape.wiki/w/Warped_Terrorbird"
+  }
  },
  {
   "name": "Waterfiends",
@@ -10876,7 +13017,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Waterfiend (Normal)",
+   "level": 128,
+   "magicLevel": 105,
+   "magicAttack": 0,
+   "stab": 100,
+   "slash": 100,
+   "crush": 10,
+   "magic": 100,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 20,
+   "size": 1,
+   "source": "https://oldschool.runescape.wiki/w/Waterfiend"
+  }
  },
  {
   "name": "Werewolves",
@@ -10934,7 +13090,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Werewolf (Boris)",
+   "level": 70,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 60,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version",
+   "source": "https://oldschool.runescape.wiki/w/Werewolf"
+  }
  },
  {
   "name": "Wolves",
@@ -10971,7 +13143,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Wolf (Level 11)",
+   "level": 10,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 2,
+   "note": "wiki default version (level 11)",
+   "source": "https://oldschool.runescape.wiki/w/Wolf"
+  }
  },
  {
   "name": "Wyrms",
@@ -11106,7 +13294,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "BOTH"
+  "supplyType": "BOTH",
+  "defence": {
+   "monster": "Wyrm (Attacking)",
+   "level": 80,
+   "magicLevel": 80,
+   "magicAttack": 0,
+   "stab": 10,
+   "slash": 50,
+   "crush": 50,
+   "magic": 50,
+   "rangedLight": 20,
+   "rangedStandard": 20,
+   "rangedHeavy": 10,
+   "size": 3,
+   "source": "https://oldschool.runescape.wiki/w/Wyrm"
+  }
  },
  {
   "name": "Commander Zilyana",
@@ -11191,7 +13394,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Commander Zilyana",
+   "level": 300,
+   "magicLevel": 300,
+   "magicAttack": 200,
+   "stab": 100,
+   "slash": 100,
+   "crush": 100,
+   "magic": 100,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 75,
+   "size": 2,
+   "source": "https://oldschool.runescape.wiki/w/Commander_Zilyana"
+  }
  },
  {
   "name": "Zombies",
@@ -11258,7 +13476,23 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "FOOD"
+  "supplyType": "FOOD",
+  "defence": {
+   "monster": "Zombie (Level 13, 1)",
+   "level": 10,
+   "magicLevel": 1,
+   "magicAttack": 0,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 0,
+   "rangedLight": 0,
+   "rangedStandard": 0,
+   "rangedHeavy": 0,
+   "size": 1,
+   "note": "wiki default version (level 13)",
+   "source": "https://oldschool.runescape.wiki/w/Zombie"
+  }
  },
  {
   "name": "TzKal-Zuk",
@@ -11305,7 +13539,22 @@
   ],
   "poison": "NONE",
   "poisonNote": "No poison",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "TzKal-Zuk (Normal)",
+   "level": 260,
+   "magicLevel": 150,
+   "magicAttack": 550,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": 350,
+   "rangedLight": 100,
+   "rangedStandard": 100,
+   "rangedHeavy": 100,
+   "size": 7,
+   "source": "https://oldschool.runescape.wiki/w/TzKal-Zuk"
+  }
  },
  {
   "name": "Zulrah",
@@ -11362,6 +13611,22 @@
   ],
   "poison": "VENOM",
   "poisonNote": "Envenoms",
-  "supplyType": "PRAYER_POTIONS"
+  "supplyType": "PRAYER_POTIONS",
+  "defence": {
+   "monster": "Zulrah (Serpentine)",
+   "level": 300,
+   "magicLevel": 300,
+   "magicAttack": 50,
+   "stab": 0,
+   "slash": 0,
+   "crush": 0,
+   "magic": -45,
+   "rangedLight": 50,
+   "rangedStandard": 50,
+   "rangedHeavy": 50,
+   "size": 5,
+   "note": "serpentine (green) form",
+   "source": "https://oldschool.runescape.wiki/w/Zulrah"
+  }
  }
 ]

@@ -45,6 +45,61 @@ public class TaskInfo
 	private String poisonNote;
 	/** Computed per player by TaskResolver, not loaded from data. */
 	private transient List<ItemNeed> supplies;
+	/** Defence stats of the task's usual monster, from the OSRS Wiki. Null when not verified. */
+	private Defence defence;
+
+	/**
+	 * A monster's defensive stats, used to estimate damage per second.
+	 */
+	@Data
+	public static class Defence
+	{
+		/** Wiki page and version the numbers come from, e.g. "Dust devil (Catacombs of Kourend)". */
+		private String monster;
+		/** Why this version was chosen, when the monster has several. */
+		private String note;
+		private String source;
+		private int level;
+		private int magicLevel;
+		private int magicAttack;
+		private int stab;
+		private int slash;
+		private int crush;
+		private int magic;
+		private int rangedLight;
+		private int rangedStandard;
+		private int rangedHeavy;
+		private int size;
+
+		int melee(String type)
+		{
+			switch (type)
+			{
+				case "stab":
+					return stab;
+				case "slash":
+					return slash;
+				default:
+					return crush;
+			}
+		}
+
+		/**
+		 * Ranged defence against light (thrown), standard (bows) or heavy (crossbows, chinchompas) attacks.
+		 */
+		int ranged(String weight)
+		{
+			switch (weight)
+			{
+				case "light":
+					return rangedLight;
+				case "heavy":
+					return rangedHeavy;
+				default:
+					return rangedStandard;
+			}
+		}
+	}
 
 	@Data
 	public static class Requirement

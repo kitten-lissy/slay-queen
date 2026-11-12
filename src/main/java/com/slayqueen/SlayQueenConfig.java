@@ -82,7 +82,7 @@ public interface SlayQueenConfig extends Config
 	@ConfigItem(
 		keyName = "style",
 		name = "Combat style",
-		description = "Style to pick gear for. Auto uses the recommended style for the task.",
+		description = "Style to pick gear for. Auto picks the task's style that deals the most damage with your gear.",
 		position = 3
 	)
 	default StyleChoice style()
@@ -91,14 +91,14 @@ public interface SlayQueenConfig extends Config
 	}
 
 	@ConfigItem(
-		keyName = "preferAoe",
-		name = "Use burst/barrage setups",
-		description = "On tasks that are usually stacked and burst/barraged (or chinned), pick an AoE loadout when style is Auto",
+		keyName = "useAoe",
+		name = "Use AoE when viable",
+		description = "<html>On tasks where monsters can be stacked and hit with burst/barrage or chinchompas,<br>pick an AoE loadout when Combat style is Auto. When off, the plugin picks the single-target<br>style that deals the most damage with your gear.</html>",
 		position = 4
 	)
-	default boolean preferAoe()
+	default boolean useAoe()
 	{
-		return true;
+		return false;
 	}
 
 	@ConfigItem(
@@ -146,10 +146,21 @@ public interface SlayQueenConfig extends Config
 	}
 
 	@ConfigItem(
+		keyName = "highlightEquipment",
+		name = "Highlight worn items",
+		description = "Highlight recommended gear you are already wearing, in the worn equipment tab",
+		position = 9
+	)
+	default boolean highlightEquipment()
+	{
+		return true;
+	}
+
+	@ConfigItem(
 		keyName = "highlightColor",
 		name = "Highlight color",
 		description = "Color used to highlight items",
-		position = 9
+		position = 10
 	)
 	default Color highlightColor()
 	{

@@ -66,6 +66,39 @@ public class TaskDataTest
 	}
 
 	@Test
+	public void defenceDataIsComplete() throws Exception
+	{
+		int withData = 0;
+		for (TaskInfo t : load("tasks.json", TaskInfo[].class))
+		{
+			TaskInfo.Defence d = t.getDefence();
+			if (d == null)
+			{
+				continue;
+			}
+			withData++;
+			assertNotNull(t.getName(), d.getMonster());
+			assertTrue(t.getName(), d.getSource().startsWith("https://oldschool.runescape.wiki/w/"));
+			assertTrue(t.getName(), d.getLevel() >= 1);
+			assertTrue(t.getName(), d.getSize() >= 1);
+		}
+		assertEquals(145, withData);
+	}
+
+	@Test
+	public void aoeLevelsAreKnown() throws Exception
+	{
+		for (TaskInfo t : load("tasks.json", TaskInfo[].class))
+		{
+			if (t.getAoe() != null)
+			{
+				assertTrue(t.getName(), Arrays.asList("YES", "OPTIONAL").contains(t.getAoeLevel()));
+				assertTrue(t.getName(), Arrays.asList("BURST", "BARRAGE", "CHINCHOMPA").contains(t.getAoe()));
+			}
+		}
+	}
+
+	@Test
 	public void gearDataLoads() throws Exception
 	{
 		GearData gear = load("gear.json", GearData.class);

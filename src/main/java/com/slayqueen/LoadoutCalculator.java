@@ -1,6 +1,9 @@
 package com.slayqueen;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
@@ -15,7 +18,8 @@ import lombok.Value;
  * Order of preference for each slot:
  * 1. task-specific gear (salve amulet for undead, leaf-bladed weapons, dragonhunter, ...)
  * 2. slayer helmet / black mask for the head slot
- * 3. curated weapon list for the weapon slot
+ * 3. for the weapon slot, the owned weapon with the highest expected damage against the task's
+ *    monster (DpsCalculator), or the curated weapon list when the task has no monster data
  * 4. the owned item with the best real equipment bonuses for the style and the monster's weakness
  */
 public class LoadoutCalculator
@@ -57,16 +61,31 @@ public class LoadoutCalculator
 		List<NeedStatus> supplies;
 		/** Teleport items to reach the task (fairy rings etc. are shown as text, not here). */
 		List<NeedStatus> travel;
+		/** A few words on why this style was picked, for the panel. */
+		String reason;
+		/** Expected damage per second of the loadout, or 0 when it couldn't be worked out. */
+		double dps;
 	}
+
+	static final String REASON_DPS = "Best DPS with your gear";
+	static final String REASON_USUAL = "Usual style for this task";
 
 	/**
 	 * Owned items keyed by lower-case item name.
 	 */
 	private final Map<String, Pick> owned;
+	/** The player's levels, or null to skip the damage comparison and use the ranked lists. */
+	private final DpsCalculator.Levels levels;
 
 	public LoadoutCalculator(Map<String, Pick> ownedByLowerName)
 	{
+		this(ownedByLowerName, null);
+	}
+
+	public LoadoutCalculator(Map<String, Pick> ownedByLowerName, DpsCalculator.Levels levels)
+	{
 		this.owned = ownedByLowerName;
+		this.levels = levels;
 	}
 
 	/**
@@ -76,26 +95,61 @@ public class LoadoutCalculator
 	private static final String RESTRICTIVE_TAG = "leafy";
 
 	/**
+	 * The task's allowed style whose best owned loadout deals the most damage. Without monster
+	 * data or levels this is the task's first listed style, as before.
+	 */
+	public Loadout best(TaskInfo task, GearData gear, IntFunction<EquipStats> stats)
+	{
+		List<String> styles = task.getStyles() == null || task.getStyles().isEmpty()
+			? Collections.singletonList("MELEE") : task.getStyles();
+		if (levels == null || task.getDefence() == null)
+		{
+			return calculate(task, styles.get(0), gear, stats, REASON_USUAL);
+		}
+		Loadout best = null;
+		for (String style : styles)
+		{
+			Loadout l = calculate(task, style, gear, stats, REASON_DPS);
+			if (best == null || l.getDps() > best.getDps())
+			{
+				best = l;
+			}
+		}
+		if (best.getDps() <= 0)
+		{
+			return calculate(task, styles.get(0), gear, stats, REASON_USUAL);
+		}
+		return best;
+	}
+
+	/**
 	 * @param stats equipment stats for an item id, or null when it isn't equipable/unknown
 	 */
 	public Loadout calculate(TaskInfo task, String style, GearData gear, IntFunction<EquipStats> stats)
 	{
+		return calculate(task, style, gear, stats, null);
+	}
+
+	public Loadout calculate(TaskInfo task, String style, GearData gear, IntFunction<EquipStats> stats, String reason)
+	{
 		// An AoE setup is useless without a weapon that can cast Ancients (or chinchompas),
-		// so fall back to the task's normal style.
+		// so fall back to the best single-target style.
 		if (AOE_MAGIC.equals(style) && findOwned(gear.aoe("WEAPON")) == null
 			|| CHINCHOMPA.equals(style) && findOwned(gear.aoe("CHINCHOMPA")) == null)
 		{
-			List<String> styles = task.getStyles();
-			String fallback = styles == null || styles.isEmpty() ? "MELEE" : styles.get(0);
-			return calculate(task, fallback, gear, stats);
+			Loadout fallback = best(task, gear, stats);
+			String why = AOE_MAGIC.equals(style) ? "No Ancients weapon owned" : "No chinchompas owned";
+			return withReason(fallback, why + ". " + fallback.getReason());
 		}
 
 		String weakness = task.getWeakness();
-		Map<String, Pick> picks = new LinkedHashMap<>();
 		String gearStyle = baseStyle(style);
+		Map<String, Map<String, Pick>> armourCache = new HashMap<>();
 
 		// Weapon first, because ammo and the shield depend on it
 		Pick weapon;
+		String armourWeakness = weakness;
+		double dps = 0;
 		if (AOE_MAGIC.equals(style))
 		{
 			weapon = findOwned(gear.aoe("WEAPON"));
@@ -104,54 +158,98 @@ public class LoadoutCalculator
 		{
 			weapon = findOwned(gear.aoe("CHINCHOMPA"));
 		}
+		else if (usesDps(task))
+		{
+			WeaponChoice choice = bestWeapon(task, style, gear, stats, armourCache);
+			if (choice != null)
+			{
+				weapon = choice.pick;
+				dps = choice.dps;
+				if (choice.attackType != null)
+				{
+					armourWeakness = choice.attackType;
+				}
+			}
+			else
+			{
+				weapon = task.tagsOrEmpty().contains(RESTRICTIVE_TAG) ? null : pickWeapon(task, style, weakness, gear, stats);
+			}
+		}
 		else
 		{
 			weapon = pickWeapon(task, style, weakness, gear, stats);
 		}
+
+		Map<String, Pick> ordered = assemble(task, style, weapon, armourWeakness, gear, stats, armourCache);
+
+		return new Loadout(style, ordered,
+			statuses(task.getRequiredItems()),
+			statuses(task.getRecommendedItems()),
+			statuses(task.getLootItems()),
+			statuses(task.getSupplies()),
+			statuses(travelItems(task)),
+			reason,
+			dps);
+	}
+
+	private static Loadout withReason(Loadout l, String reason)
+	{
+		return new Loadout(l.getStyle(), l.getGear(), l.getRequired(), l.getRecommended(), l.getLoot(),
+			l.getSupplies(), l.getTravel(), reason, l.getDps());
+	}
+
+	private boolean usesDps(TaskInfo task)
+	{
+		return levels != null && task.getDefence() != null;
+	}
+
+	/**
+	 * The full loadout around a weapon: armour (cached per style and attack type), salve,
+	 * ammo, and no shield with a two-handed weapon. In equipment order.
+	 */
+	private Map<String, Pick> assemble(TaskInfo task, String style, Pick weapon, String weakness, GearData gear,
+		IntFunction<EquipStats> stats, Map<String, Map<String, Pick>> armourCache)
+	{
+		String gearStyle = baseStyle(style);
+		Map<String, Pick> armour = armourCache.computeIfAbsent(style + "|" + weakness, k ->
+		{
+			Map<String, Pick> out = new HashMap<>();
+			// Salve amulet for undead tasks
+			Pick salve = task.tagsOrEmpty().contains("undead") ? pickSalve(gear, gearStyle) : null;
+			for (String slot : SLOTS)
+			{
+				if ("WEAPON".equals(slot) || "AMMO".equals(slot))
+				{
+					continue;
+				}
+				Pick pick = "AMULET".equals(slot) && salve != null
+					? salve
+					// Always suggest the best slayer helmet/black mask owned, even alongside a salve
+					: pickArmour(task, slot, style, gearStyle, weakness, gear, stats, true);
+				if (pick != null)
+				{
+					out.put(slot, pick);
+				}
+			}
+			return out;
+		});
+
+		Map<String, Pick> picks = new HashMap<>(armour);
 		if (weapon != null)
 		{
 			picks.put("WEAPON", weapon);
-		}
-
-		// Salve amulet for undead tasks
-		Pick salve = task.tagsOrEmpty().contains("undead") ? pickSalve(gear, gearStyle) : null;
-
-		for (String slot : SLOTS)
-		{
-			if ("WEAPON".equals(slot))
-			{
-				continue;
-			}
-			Pick pick;
-			if ("AMMO".equals(slot))
-			{
-				pick = "RANGED".equals(style) ? pickAmmo(task, weapon, gear, stats) : null;
-			}
-			else if ("AMULET".equals(slot) && salve != null)
-			{
-				pick = salve;
-			}
-			else
-			{
-				// Always suggest the best slayer helmet/black mask owned, even alongside a salve
-				pick = pickArmour(task, slot, style, gearStyle, weakness, gear, stats, true);
-			}
-			if (pick != null)
-			{
-				picks.put(slot, pick);
-			}
-		}
-
-		if (weapon != null)
-		{
 			EquipStats ws = stats.apply(weapon.getItemId());
 			if (ws != null && ws.isTwoHanded())
 			{
 				picks.remove("SHIELD");
 			}
 		}
+		Pick ammo = "RANGED".equals(style) ? pickAmmo(task, weapon, gear, stats) : null;
+		if (ammo != null)
+		{
+			picks.put("AMMO", ammo);
+		}
 
-		// Keep the display in equipment order
 		Map<String, Pick> ordered = new LinkedHashMap<>();
 		for (String slot : SLOTS)
 		{
@@ -160,13 +258,155 @@ public class LoadoutCalculator
 				ordered.put(slot, picks.get(slot));
 			}
 		}
+		return ordered;
+	}
 
-		return new Loadout(style, ordered,
-			statuses(task.getRequiredItems()),
-			statuses(task.getRecommendedItems()),
-			statuses(task.getLootItems()),
-			statuses(task.getSupplies()),
-			statuses(travelItems(task)));
+	@Value
+	private static class WeaponChoice
+	{
+		Pick pick;
+		String attackType;
+		double dps;
+	}
+
+	/**
+	 * The owned weapon (with the gear around it) that deals the most expected damage to the
+	 * task's monster. Task-specific weapons (leaf-bladed, dragonhunter, ...) still win outright.
+	 * Null when nothing usable is owned.
+	 */
+	private WeaponChoice bestWeapon(TaskInfo task, String style, GearData gear, IntFunction<EquipStats> stats,
+		Map<String, Map<String, Pick>> armourCache)
+	{
+		List<String> special = specialFor(task, gear, "WEAPON_" + style);
+		special.addAll(specialFor(task, gear, "WEAPON"));
+		Pick specialPick = findOwned(special);
+		List<Pick> candidates;
+		if (specialPick != null)
+		{
+			candidates = Collections.singletonList(specialPick);
+		}
+		else if (task.tagsOrEmpty().contains(RESTRICTIVE_TAG))
+		{
+			return null;
+		}
+		else
+		{
+			candidates = weaponCandidates(style, gear, stats);
+		}
+
+		int darts = bestDartStrength(stats);
+		WeaponChoice best = null;
+		for (Pick w : candidates)
+		{
+			EquipStats ws = stats.apply(w.getItemId());
+			List<String> types = "MELEE".equals(style) && ws != null
+				? DpsCalculator.meleeTypes(ws) : Collections.singletonList(null);
+			for (String type : types)
+			{
+				Map<String, Pick> g = assemble(task, style, w, type != null ? type : task.getWeakness(), gear, stats, armourCache);
+				// A bow or crossbow without ammo you own can't attack
+				boolean noAmmo = "RANGED".equals(style) && ammoTypeFor(w.getName()) != null && !g.containsKey("AMMO");
+				DpsCalculator.Result r = noAmmo
+					? new DpsCalculator.Result(0, null)
+					: DpsCalculator.evaluate(style, g, stats, task, levels, type, darts);
+				// Strictly better only, so ties keep the curated order
+				if (best == null || r.getDps() > best.getDps() + 1e-9)
+				{
+					best = new WeaponChoice(w, type, r.getDps());
+				}
+			}
+		}
+		if (best != null && best.getDps() <= 0 && specialPick == null)
+		{
+			// Nothing could be scored (e.g. missing stats); let the ranked list decide
+			return null;
+		}
+		return best;
+	}
+
+	/**
+	 * Owned weapons for a style: the curated list first (in its order), then anything else
+	 * owned whose stats fit the style, sorted by name so the result is deterministic.
+	 */
+	private List<Pick> weaponCandidates(String style, GearData gear, IntFunction<EquipStats> stats)
+	{
+		List<Pick> out = new ArrayList<>();
+		for (String name : gear.generic(style, "WEAPON"))
+		{
+			Pick p = findOwned(Collections.singletonList(name));
+			if (p != null && !out.contains(p))
+			{
+				out.add(p);
+			}
+		}
+		List<Pick> extra = new ArrayList<>();
+		for (Pick p : owned.values())
+		{
+			if (out.contains(p) || !usable(p.getName()))
+			{
+				continue;
+			}
+			EquipStats s = stats.apply(p.getItemId());
+			if (s != null && s.getSlot() == EquipStats.SLOT_WEAPON && style.equals(weaponStyle(p.getName(), s)))
+			{
+				extra.add(p);
+			}
+		}
+		extra.sort(Comparator.comparing(Pick::getName));
+		out.addAll(extra);
+		return out;
+	}
+
+	/**
+	 * Which style a weapon is for, judged by its name and bonuses: MELEE, RANGED, MAGIC,
+	 * CHINCHOMPA, or null if it doesn't look like a weapon.
+	 */
+	static String weaponStyle(String name, EquipStats s)
+	{
+		String n = name.toLowerCase(Locale.ROOT);
+		if (n.contains("chinchompa"))
+		{
+			return CHINCHOMPA;
+		}
+		int melee = Math.max(s.getAstab(), Math.max(s.getAslash(), s.getAcrush()));
+		boolean magicName = n.contains("staff") || n.contains("wand") || n.contains("sceptre") || n.contains("trident")
+			|| n.startsWith("tumeken's shadow") || n.startsWith("eye of ayak") || n.startsWith("blue moon spear");
+		if (s.getAmagic() > 0 && magicName)
+		{
+			return "MAGIC";
+		}
+		if (s.getArange() > 0 && melee <= 0)
+		{
+			return "RANGED";
+		}
+		if (melee > 0 || s.getStr() > 0)
+		{
+			return "MELEE";
+		}
+		return null;
+	}
+
+	/**
+	 * Ranged strength of the best darts owned, for a blowpipe; adamant darts when none are owned
+	 * (the darts loaded in a blowpipe aren't visible to the plugin).
+	 */
+	private int bestDartStrength(IntFunction<EquipStats> stats)
+	{
+		int best = 0;
+		for (Pick p : owned.values())
+		{
+			String n = p.getName().toLowerCase(Locale.ROOT);
+			if (!n.matches("[a-z]+ dart(\\(.*\\))?") || n.startsWith("atlatl") || !usable(p.getName()))
+			{
+				continue;
+			}
+			EquipStats s = stats.apply(p.getItemId());
+			if (s != null)
+			{
+				best = Math.max(best, s.getRstr());
+			}
+		}
+		return best > 0 ? best : DpsCalculator.DEFAULT_DART_STRENGTH;
 	}
 
 	/**
@@ -275,6 +515,15 @@ public class LoadoutCalculator
 			if (aoe != null)
 			{
 				return aoe;
+			}
+		}
+		else if (CHINCHOMPA.equals(style))
+		{
+			// Chinchompas live on accuracy: the most Ranged attack bonus, then Ranged strength
+			Pick acc = bestByStats(EquipStats.slotIndex(slot), stats, s -> s.getArange() * 100.0 + s.getRstr());
+			if (acc != null)
+			{
+				return acc;
 			}
 		}
 

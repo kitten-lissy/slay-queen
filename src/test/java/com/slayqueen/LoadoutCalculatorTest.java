@@ -214,6 +214,82 @@ public class LoadoutCalculatorTest
 		assertFalse(LoadoutCalculator.usable("Accursed sceptre (u)"));
 	}
 
+	private static GearData realGear() throws Exception
+	{
+		try (java.io.Reader r = new java.io.InputStreamReader(SlayQueenPlugin.class.getResourceAsStream("gear.json"),
+			java.nio.charset.StandardCharsets.UTF_8))
+		{
+			return new com.google.gson.Gson().fromJson(r, GearData.class);
+		}
+	}
+
+	@Test
+	public void ownedFuryIsPickedOnAMeleeTask() throws Exception
+	{
+		LoadoutCalculator calc = new LoadoutCalculator(owned("Amulet of fury", "Abyssal whip"));
+		assertEquals("Amulet of fury", calc.calculate(task(), "MELEE", realGear(), id -> null).getGear().get("AMULET").getName());
+		// The ornament kit version counts too
+		LoadoutCalculator or = new LoadoutCalculator(owned("Amulet of fury (or)", "Abyssal whip"));
+		assertEquals("Amulet of fury (or)", or.calculate(task(), "MELEE", realGear(), id -> null).getGear().get("AMULET").getName());
+	}
+
+	@Test
+	public void ownedOccultIsPickedForMagicAndAoe() throws Exception
+	{
+		LoadoutCalculator calc = new LoadoutCalculator(owned("Occult necklace", "Amulet of fury", "Kodai wand", "Trident of the swamp"));
+		TaskInfo t = task();
+		t.setStyles(Collections.singletonList("MAGIC"));
+		assertEquals("Occult necklace", calc.calculate(t, "MAGIC", realGear(), id -> null).getGear().get("AMULET").getName());
+		LoadoutCalculator.Loadout aoe = calc.calculate(t, LoadoutCalculator.AOE_MAGIC, realGear(), id -> null);
+		assertEquals("Occult necklace", aoe.getGear().get("AMULET").getName());
+		assertEquals("Kodai wand", aoe.getGear().get("WEAPON").getName());
+	}
+
+	@Test
+	public void aoeBestInSlot() throws Exception
+	{
+		LoadoutCalculator calc = new LoadoutCalculator(owned("Ancient sceptre", "Kodai wand", "Ahrim's staff",
+			"Slayer helmet (i)", "Ancestral hat", "Tormented bracelet", "Confliction gauntlets", "Imbued saradomin cape",
+			"Saradomin cape", "Occult necklace", "Salve amulet(ei)", "Virtus robe top", "Ancestral robe top"));
+		GearData g = realGear();
+		LoadoutCalculator.Loadout l = calc.calculate(task(), LoadoutCalculator.AOE_MAGIC, g, id -> null);
+		assertEquals("Kodai wand", l.getGear().get("WEAPON").getName());
+		assertEquals("Slayer helmet (i)", l.getGear().get("HEAD").getName());
+		assertEquals("Confliction gauntlets", l.getGear().get("GLOVES").getName());
+		assertEquals("Imbued saradomin cape", l.getGear().get("CAPE").getName());
+		assertEquals("Occult necklace", l.getGear().get("AMULET").getName());
+		// Virtus adds damage to Ancient spells, so it beats ancestral for barrage
+		assertEquals("Virtus robe top", l.getGear().get("BODY").getName());
+		// Undead: imbued salve, still with the slayer helmet
+		LoadoutCalculator.Loadout undead = calc.calculate(task("undead"), LoadoutCalculator.AOE_MAGIC, g, id -> null);
+		assertEquals("Salve amulet(ei)", undead.getGear().get("AMULET").getName());
+		assertEquals("Slayer helmet (i)", undead.getGear().get("HEAD").getName());
+		// Ahrim's staff only casts Ancients with the full set and amulet of the damned
+		assertFalse(g.aoe("WEAPON").contains("Ahrim's staff"));
+	}
+
+	@Test
+	public void chinchompasUseTheBestTypeAndRangedAccuracy() throws Exception
+	{
+		// 1 = red chins, 2 = black chins, 3 = accurate body, 4 = strength-only body
+		LoadoutCalculator calc = new LoadoutCalculator(owned("Red chinchompa", "Black chinchompa", "Accurate body", "Strong body"));
+		java.util.function.IntFunction<EquipStats> stats = id ->
+		{
+			switch (id)
+			{
+				case 3:
+					return EquipStats.builder().slot(EquipStats.SLOT_BODY).arange(40).build();
+				case 4:
+					return EquipStats.builder().slot(EquipStats.SLOT_BODY).arange(10).rstr(5).build();
+				default:
+					return null;
+			}
+		};
+		LoadoutCalculator.Loadout l = calc.calculate(task(), LoadoutCalculator.CHINCHOMPA, realGear(), stats);
+		assertEquals("Black chinchompa", l.getGear().get("WEAPON").getName());
+		assertEquals("Accurate body", l.getGear().get("BODY").getName());
+	}
+
 	@Test
 	public void taskKeyIgnoresCaseAndThe()
 	{
